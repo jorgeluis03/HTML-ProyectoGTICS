@@ -453,28 +453,34 @@
 
               </div>
             </div><!-- End Top Selling -->
+			
 			<!-- Top Selling -->
             <div class="col-12">
               <div class="card top-selling overflow-auto container">
 
                 <div class="filter">
+				
                   <a class="icon" href="#" data-bs-toggle="dropdown"><i class="bi bi-three-dots"></i></a>
                   <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
                     <li class="dropdown-header text-start">
-                      <h6>Filter</h6>
+                      <h6>Filtrar</h6>
                     </li>
 
-                    <li><a class="dropdown-item" href="#">Today</a></li>
-                    <li><a class="dropdown-item" href="#">This Month</a></li>
-                    <li><a class="dropdown-item" href="#">This Year</a></li>
+                    <li><a class="dropdown-item" href="#">Invitado</a></li>
+                    <li><a class="dropdown-item" href="#">Registrado</a></li>
+                    <li><a class="dropdown-item" href="#">Activo</a></li>
+					<li><a class="dropdown-item" href="#">Agendado</a></li>
                   </ul>
                 </div>
 
                 <div class="card-body pb-0">
-                  <h5 class="card-title">DOCOTRES <span>| Sede San Isidro</span></h5>
+					<div class="d-flex justify-content-between align-items-center">
+					  <h5 class="card-title">PACIENTES <span>| Sede San Isidro</span></h5>
+					  <button class="btn btn-primary"><i class="bi bi-plus"></i> Agregar paciente</button>
+					 </div>
 				  <div class="container-fluid">
 					<form class="d-flex" role="search">
-					  <input class="form-control me-2" type="search" placeholder="Especialidad" aria-label="Search">
+					  <input class="form-control me-2" type="search" placeholder="Buscar paciente" aria-label="Search">
 					  <button class="btn btn-outline-success" type="submit">Buscar</button>
 					</form>
 				  </div>
@@ -483,7 +489,7 @@
                   <table class="table ">
                     <thead>
                       <tr>
-                        <th scope="col">Doctores Disponibles</th>
+                        <th scope="col">Pacientes</th>
                       </tr>
                     </thead>
                     <tbody>
@@ -603,6 +609,36 @@
               </div>
             </div><!-- End Top Selling -->
 
+<div class="container">
+  <div class="d-flex justify-content-between align-items-center">
+    <h2 class="fw-bold mb-0">PACIENTES</h2>
+	<button class="btn btn-primary"><i class="bi bi-plus"></i> Agregar paciente</button>
+    
+  </div>
+  <hr>
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Nombre</th>
+        <th>Edad</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Lucía Gómez</td>
+        <td>28</td>
+      </tr>
+      <tr>
+        <td>Pedro Pérez</td>
+        <td>45</td>
+      </tr>
+      <tr>
+        <td>María Fernández</td>
+        <td>52</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
 
           </div>
