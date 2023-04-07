@@ -412,7 +412,40 @@
 				  </div>
 				  <div class="tab-pane fade" id="nav-mensajes" role="tabpanel" aria-labelledby="nav-mensajes-tab">
 					<h2>Mensajes</h2>
-					<p>Aquí se muestra la información de los mensajes del paciente.</p>
+					<table class="table ">
+						<thead>
+						  <tr>
+							<th scope="col">ID del mensaje</th>
+							<th scope="col">Fecha y hora</th>
+							<th scope="col">Destinatario</th>
+							<th scope="col">Mensaje</th>
+							<th scope="col">Estado</th>
+						  </tr>
+						</thead>
+						<tbody>
+						  <tr>
+							<th scope="row">1</th>
+							<td>2023-04-07 10:30:00</td>
+							<td>Dr. Juan Pérez</td>
+							<td>Hola, me gustaría programar una cita para revisar mi condición médica.</td>
+							<td>Enviado</td>
+						  </tr>
+						  <tr>
+							<th scope="row">2</th>
+							<td>2023-04-06 15:45:00</td>
+							<td>Dr. María Gómez</td>
+							<td>Quisiera saber si el medicamento que me recetaron tiene algún efecto secundario.</td>
+							<td>Leído</td>
+						  </tr>
+						  <tr>
+							<th scope="row">3</th>
+							<td>2023-04-05 08:00:00</td>
+							<td>Dr. Juan Pérez</td>
+							<td>¿Ya están listos los resultados de mi examen? ¿Cómo puedo obtenerlos?</td>
+							<td>Recibido</td>
+						  </tr>
+						</tbody>
+					  </table>
 				  </div>
 				  <div class="tab-pane fade" id="nav-cuestionarios" role="tabpanel" aria-labelledby="nav-cuestionarios-tab">
 					<h2>Cuestionarios</h2>
@@ -489,15 +522,114 @@
 					</div>
 					<div class="tab-pane fade" id="nav-documentos" role="tabpanel" aria-labelledby="nav-documentos-tab">
 					<h2>Documentos anexados</h2>
-					<p>Aquí se muestra la información de los documentos anexados del paciente.</p>
+					<table class="table table-striped ">
+						<thead>
+						  <tr>
+							<th scope="col">ID del documento</th>
+							<th scope="col">Nombre del documento</th>
+							<th scope="col">Tipo de documento</th>
+							<th scope="col">Fecha de carga</th>
+						  </tr>
+						</thead>
+						<tbody>
+						  <tr>
+							<th scope="row">1</th>
+							<td>Informe médico</td>
+							<td>PDF</td>
+							<td>2023-02-25</td>
+						  </tr>
+						  <tr>
+							<th scope="row">2</th>
+							<td>Resultados de análisis de sangre</td>
+							<td>PDF</td>
+							<td>2022-11-30</td>
+						  </tr>
+						  <tr>
+							<th scope="row">3</th>
+							<td>Recetas médicas</td>
+							<td>Imagen</td>
+							<td>2022-08-05</td>
+						  </tr>
+						</tbody>
+					  </table>
 					</div>
 					<div class="tab-pane fade" id="nav-info-personal" role="tabpanel" aria-labelledby="nav-info-personal-tab">
 					<h2>Información personal</h2>
-					<p>Aquí se muestra la información personal del paciente.</p>
+					<table class="table ">
+						<tbody>
+						  <tr>
+							<th scope="row">Nombre completo:</th>
+							<td>John Doe</td>
+						  </tr>
+						  <tr>
+							<th scope="row">Fecha de nacimiento:</th>
+							<td>1990-03-15</td>
+						  </tr>
+						  <tr>
+							<th scope="row">Edad:</th>
+							<td>33</td>
+						  </tr>
+						  <tr>
+							<th scope="row">Género:</th>
+							<td>Masculino</td>
+						  </tr>
+						  <tr>
+							<th scope="row">Número de identificación:</th>
+							<td>1234567890</td>
+						  </tr>
+						  <tr>
+							<th scope="row">Dirección:</th>
+							<td>123 Main St, Anytown USA</td>
+						  </tr>
+						  <tr>
+							<th scope="row">Número de teléfono:</th>
+							<td>(123) 456-7890</td>
+						  </tr>
+						  <tr>
+							<th scope="row">Correo electrónico:</th>
+							<td>johndoe@gmail.com</td>
+						  </tr>
+						</tbody>
+					  </table>
 					</div>
 					<div class="tab-pane fade" id="nav-status" role="tabpanel" aria-labelledby="nav-status-tab">
 					<h2>Status del paciente</h2>
-					<p>Aquí se muestra el status actual del paciente.</p>
+					<table class="table ">
+					<tbody>
+					  <tr>
+						<th scope="row">ID del paciente:</th>
+						<td>12345</td>
+					  </tr>
+					  <tr>
+						<th scope="row">Nombre del paciente:</th>
+						<td>John Doe</td>
+					  </tr>
+					  <tr>
+						<th scope="row">Fecha de admisión:</th>
+						<td>2023-03-01</td>
+					  </tr>
+					  <tr>
+						<th scope="row">Estado actual:</th>
+						<td>En tratamiento</td>
+					  </tr>
+					  <tr>
+						<th scope="row">Última consulta:</th>
+						<td>2023-04-01</td>
+					  </tr>
+					  <tr>
+						<th scope="row">Próxima consulta:</th>
+						<td>2023-04-15</td>
+					  </tr>
+					  <tr>
+						<th scope="row">Médico tratante:</th>
+						<td>Dr. Jane Smith</td>
+					  </tr>
+					  <tr>
+						<th scope="row">Departamento:</th>
+						<td>Cardiología</td>
+					  </tr>
+					</tbody>
+				  </table>
 					</div>
 					<div class="tab-pane fade" id="nav-citas" role="tabpanel" aria-labelledby="nav-citas-tab">
 					<h2>Próximas citas</h2>
