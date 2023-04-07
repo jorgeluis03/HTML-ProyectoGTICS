@@ -104,6 +104,7 @@ h6 {
 # Override some default Bootstrap stylings
 --------------------------------------------------------------*/
 /* Dropdown menus */
+
 .dropdown-menu {
     border-radius: 4px;
     padding: 10px 0;
@@ -354,11 +355,7 @@ h6 {
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
-#header {
-    /* Agrega aquí los estilos que deseas aplicar al header */
-    background-color: #b19cd9;
 
-}
 .logo {
     line-height: 1;
 }
@@ -1235,4 +1232,11 @@ h6 {
     text-align: center;
     font-size: 13px;
     color: #012970;
+}
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: #ADD8E6;
+}
+#header {
+    /* Agrega aquí los estilos que deseas aplicar al header */
+    background-color: #b19cd9;
 }

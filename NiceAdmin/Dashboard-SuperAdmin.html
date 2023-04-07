@@ -28,6 +28,7 @@
 
         <!-- Template Main CSS File -->
         <link href="assets/css/stylesuperadmin.css" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
         <!-- =======================================================
         * Template Name: NiceAdmin
@@ -36,34 +37,17 @@
         * Author: BootstrapMade.com
         * License: https://bootstrapmade.com/license/
         ======================================================== -->
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     </head>
 
     <body>
-        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <div class="modal-title" id="staticBackdropLabel"></div>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
-                        <button type="button" class="btn btn-primary">Loguearse</button>
-                    </div>
-                </div>
-            </div>
-        </div>
 
         <!-- ======= Header ======= -->
         <header id="header" class="header fixed-top d-flex align-items-center">
 
             <div class="d-flex align-items-center justify-content-between">
                 <a href="index.html" class="logo d-flex align-items-center">
-                    <img src="assets/img/logoClinica.png" alt="">
-                    <span class="d-none d-lg-block">Clínica INTERPUCP</span>
+                    <img src="assets/img/logo.png" alt="">
+                    <span class="d-none d-lg-block">NiceAdmin</span>
                 </a>
                 <i class="bi bi-list toggle-sidebar-btn"></i>
             </div><!-- End Logo -->
@@ -229,7 +213,7 @@
 
                         <a class="nav-link nav-profile d-flex align-items-center pe-0" href="#" data-bs-toggle="dropdown">
                             <img src="assets/img/profile-img.jpg" alt="Profile" class="rounded-circle">
-                            <span class="d-none d-md-block dropdown-toggle ps-2">P. Gustavo</span>
+                            <span class="d-none d-md-block dropdown-toggle ps-2">K. Anderson</span>
                         </a><!-- End Profile Iamge Icon -->
 
                         <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
@@ -298,7 +282,7 @@
                     </a>
                 </li><!-- End Dashboard Nav -->
 
-               <!-- <li class="nav-item">
+                <li class="nav-item">
                     <a class="nav-link collapsed" data-bs-target="#components-nav" data-bs-toggle="collapse" href="#">
                         <i class="bi bi-menu-button-wide"></i><span>Components</span><i class="bi bi-chevron-down ms-auto"></i>
                     </a>
@@ -374,50 +358,49 @@
                             </a>
                         </li>
                     </ul>
-                </li>&lt;!&ndash; End Components Nav &ndash;&gt;
-                -->
+                </li><!-- End Components Nav -->
 
                 <li class="nav-item">
                     <a class="nav-link collapsed" data-bs-target="#forms-nav" data-bs-toggle="collapse" href="#">
-                        <i class="bi bi-journal-text"></i><span>Formularios</span><i class="bi bi-chevron-down ms-auto"></i>
+                        <i class="bi bi-journal-text"></i><span>Forms</span><i class="bi bi-chevron-down ms-auto"></i>
                     </a>
                     <ul id="forms-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
                         <li>
                             <a href="forms-elements.html">
-                                <i class="bi bi-circle"></i><span>Ver Formularios</span>
+                                <i class="bi bi-circle"></i><span>Form Elements</span>
                             </a>
                         </li>
                         <li>
                             <a href="forms-layouts.html">
-                                <i class="bi bi-circle"></i><span>Crear Formulario</span>
+                                <i class="bi bi-circle"></i><span>Form Layouts</span>
                             </a>
                         </li>
-<!--                        <li>
+                        <li>
                             <a href="forms-editors.html">
                                 <i class="bi bi-circle"></i><span>Form Editors</span>
                             </a>
-                        </li>-->
-                    <!--    <li>
+                        </li>
+                        <li>
                             <a href="forms-validation.html">
                                 <i class="bi bi-circle"></i><span>Form Validation</span>
                             </a>
-                        </li>-->
+                        </li>
                     </ul>
                 </li><!-- End Forms Nav -->
 
                 <li class="nav-item">
                     <a class="nav-link collapsed" data-bs-target="#tables-nav" data-bs-toggle="collapse" href="#">
-                        <i class="bi bi-layout-text-window-reverse"></i><span>Reportes</span><i class="bi bi-chevron-down ms-auto"></i>
+                        <i class="bi bi-layout-text-window-reverse"></i><span>Tables</span><i class="bi bi-chevron-down ms-auto"></i>
                     </a>
                     <ul id="tables-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
                         <li>
                             <a href="tables-general.html">
-                                <i class="bi bi-circle"></i><span>Ver Reportes</span>
+                                <i class="bi bi-circle"></i><span>General Tables</span>
                             </a>
                         </li>
                         <li>
                             <a href="tables-data.html">
-                                <i class="bi bi-circle"></i><span>Crear Reportes</span>
+                                <i class="bi bi-circle"></i><span>Data Tables</span>
                             </a>
                         </li>
                     </ul>
@@ -425,7 +408,7 @@
 
                 <li class="nav-item">
                     <a class="nav-link collapsed" data-bs-target="#charts-nav" data-bs-toggle="collapse" href="#">
-                        <i class="bi bi-bar-chart"></i><span>Gestionar UX/UI</span><i class="bi bi-chevron-down ms-auto"></i>
+                        <i class="bi bi-bar-chart"></i><span>Charts</span><i class="bi bi-chevron-down ms-auto"></i>
                     </a>
                     <ul id="charts-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
                         <li>
@@ -468,58 +451,6 @@
                         </li>
                     </ul>
                 </li><!-- End Icons Nav -->
-
-               <!-- <li class="nav-heading">Pages</li>
-
-                <li class="nav-item">
-                    <a class="nav-link collapsed" href="users-profile.html">
-                        <i class="bi bi-person"></i>
-                        <span>Profile</span>
-                    </a>
-                </li>&lt;!&ndash; End Profile Page Nav &ndash;&gt;
-
-                <li class="nav-item">
-                    <a class="nav-link collapsed" href="pages-faq.html">
-                        <i class="bi bi-question-circle"></i>
-                        <span>F.A.Q</span>
-                    </a>
-                </li>&lt;!&ndash; End F.A.Q Page Nav &ndash;&gt;
-
-                <li class="nav-item">
-                    <a class="nav-link collapsed" href="pages-contact.html">
-                        <i class="bi bi-envelope"></i>
-                        <span>Contact</span>
-                    </a>
-                </li>&lt;!&ndash; End Contact Page Nav &ndash;&gt;
-
-                <li class="nav-item">
-                    <a class="nav-link collapsed" href="pages-register.html">
-                        <i class="bi bi-card-list"></i>
-                        <span>Register</span>
-                    </a>
-                </li>&lt;!&ndash; End Register Page Nav &ndash;&gt;
-
-                <li class="nav-item">
-                    <a class="nav-link collapsed" href="pages-login.html">
-                        <i class="bi bi-box-arrow-in-right"></i>
-                        <span>Login</span>
-                    </a>
-                </li>&lt;!&ndash; End Login Page Nav &ndash;&gt;
-
-                <li class="nav-item">
-                    <a class="nav-link collapsed" href="pages-error-404.html">
-                        <i class="bi bi-dash-circle"></i>
-                        <span>Error 404</span>
-                    </a>
-                </li>&lt;!&ndash; End Error 404 Page Nav &ndash;&gt;
-
-                <li class="nav-item">
-                    <a class="nav-link collapsed" href="pages-blank.html">
-                        <i class="bi bi-file-earmark"></i>
-                        <span>Blank</span>
-                    </a>
-                </li>&lt;!&ndash; End Blank Page Nav &ndash;&gt;-->
-
             </ul>
 
         </aside><!-- End Sidebar-->
@@ -527,350 +458,426 @@
         <main id="main" class="main">
 
             <div class="pagetitle">
-                <h1>Clínica INTERPUCP</h1>
+                <h1>Dashboard</h1>
                 <nav>
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                        <li class="breadcrumb-item active">Tabla de usuarios</li>
+                        <li class="breadcrumb-item active">Dashboard</li>
                     </ol>
                 </nav>
             </div><!-- End Page Title -->
 
             <section class="section dashboard">
-                <section class="section">
-                    <div class="row">
-                        <div class="col-lg-6">
-
-                            <div class="card">
-                                <div class="card-body">
-                                    <h5 class="card-title">Tabla de Administradores</h5>
-
-                                    <table class="table table-striped" id="superadmin-table">
-                                        <thead>
-                                            <tr>
-                                                <th scope="col">#</th>
-                                                <th scope="col">Name</th>
-                                                <th scope="col">Position</th>
-                                                <th scope="col">Age</th>
-                                                <th scope="col">Acción</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <th class="row-id">1</th>
-                                                <td>Brandon Jacob</td>
-                                                <td>Designer</td>
-                                                <td>28</td>
-                                                <td><button type="button" class="btn btn-primary    " data-bs-toggle="modal" data-bs-target="#staticBackdrop">Loguear</button></td></tr>
-                                            <tr>
-                                                <th class="row-id">2</th>
-                                                <td>Bridie Kessler</td>
-                                                <td>Developer</td>
-                                                <td>35</td>
-                                                <td><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Loguear</button></td></tr>
-                                            <tr>
-                                                <th class="row-id">3</th>
-                                                <td>Ashleigh Langosh</td>
-                                                <td>Finance</td>
-                                                <td>45</td>
-                                                <td><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Loguear</button></td></tr>
-                                            <tr>
-                                                <th class="row-id">4</th>
-                                                <td>Angus Grady</td>
-                                                <td>HR</td>
-                                                <td>34</td>
-                                                <td><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Loguear</button></td></tr>
-                                            <tr>
-                                                <th class="row-id">5</th>
-                                                <td>Raheem Lehner</td>
-                                                <td>Dynamic Division Officer</td>
-                                                <td>47</td>
-                                                <td><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Loguear</button></td></tr>
-                                            <tr>
-                                                <th class="row-id">6</th>
-                                                <td>Brandon Jacob</td>
-                                                <td>Designer</td>
-                                                <td>28</td>
-                                                <td><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Loguear</button></td></tr>
-                                            <tr>
-                                                <th class="row-id">7</th>
-                                                <td>Bridie Kessler</td>
-                                                <td>Developer</td>
-                                                <td>35</td>
-                                                <td><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Loguear</button></td></tr>
-                                            <tr>
-                                                <th class="row-id">8</th>
-                                                <td>Ashleigh Langosh</td>
-                                                <td>Finance</td>
-                                                <td>45</td>
-                                                <td><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Loguear</button></td></tr>
-                                            <tr>
-                                                <th class="row-id">9</th>
-                                                <td>Angus Grady</td>
-                                                <td>HR</td>
-                                                <td>34</td>
-                                                <td><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Loguear</button></td></tr>
-                                            <tr>
-                                                <th class="row-id">10</th>
-                                                <td>Raheem Lehner</td>
-                                                <td>Dynamic Division Officer</td>
-                                                <td>47</td>
-                                                <td><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Loguear</button></td></tr>
-                                            <tr>
-                                                <th class="row-id">11</th>
-                                                <td>Brandon Jacob</td>
-                                                <td>Designer</td>
-                                                <td>28</td>
-                                                <td><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Loguear</button></td></tr>
-                                            <tr>
-                                                <th class="row-id">12</th>
-                                                <td>Bridie Kessler</td>
-                                                <td>Developer</td>
-                                                <td>35</td>
-                                                <td><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Loguear</button></td></tr>
-                                            <tr>
-                                                <th class="row-id">13</th>
-                                                <td>Ashleigh Langosh</td>
-                                                <td>Finance</td>
-                                                <td>45</td>
-                                                <td><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Loguear</button></td></tr>
-                                            <tr>
-                                                <th class="row-id">14</th>
-                                                <td>Angus Grady</td>
-                                                <td>HR</td>
-                                                <td>34</td>
-                                                <td><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Loguear</button></td></tr>
-                                            <tr>
-                                                <th class="row-id">15</th>
-                                                <td>Raheem Lehner</td>
-                                                <td>Dynamic Division Officer</td>
-                                                <td>47</td>
-                                                <td><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Loguear</button></td></tr>
-                                        </tbody>
-                                    </table>
-                                    <div id="pagination" style="width: 100%; text-align: center;">
-                                        <button type="button" class="btn btn-primary" id="prev-btn"
-                                                style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;font-size: 16px">
-                                            <
-                                        </button>
-                                        <span id="page-num">1</span>
-                                        <button type="button" class="btn btn-primary " id="next-btn"
-                                                style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;font-size: 16px">
-                                            >
-                                        </button>
-                                    </div>
-
-                                </div>
-                            </div>
-                            <div class="card">
-                                <div class="card-body">
-                                    <h5 class="card-title">Tabla de Doctores</h5>
-
-                                    <table class="table table-striped">
-                                        <thead>
-                                            <tr>
-                                                <th scope="col">#</th>
-                                                <th scope="col">Name</th>
-                                                <th scope="col">Position</th>
-                                                <th scope="col">Age</th>
-                                                <th scope="col">Start Date</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <th>1</th>
-                                                <td>Brandon Jacob</td>
-                                                <td>Designer</td>
-                                                <td>28</td>
-                                                <td>2016-05-25</td>
-                                            </tr>
-                                            <tr>
-                                                <th>2</th>
-                                                <td>Bridie Kessler</td>
-                                                <td>Developer</td>
-                                                <td>35</td>
-                                                <td>2014-12-05</td>
-                                            </tr>
-                                            <tr>
-                                                <th>3</th>
-                                                <td>Ashleigh Langosh</td>
-                                                <td>Finance</td>
-                                                <td>45</td>
-                                                <td>2011-08-12</td>
-                                            </tr>
-                                            <tr>
-                                                <th>4</th>
-                                                <td>Angus Grady</td>
-                                                <td>HR</td>
-                                                <td>34</td>
-                                                <td>2012-06-11</td>
-                                            </tr>
-                                            <tr>
-                                                <th>5</th>
-                                                <td>Raheem Lehner</td>
-                                                <td>Dynamic Division Officer</td>
-                                                <td>47</td>
-                                                <td>2011-04-19</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
-
-                        </div>
-
-                        <div class="col-lg-6">
-                            <div class="card">
-                                <div class="card-body">
-                                    <h5 class="card-title">Tabla de Administrativos</h5>
-
-                                    <table class="table table-striped">
-                                        <thead>
-                                            <tr>
-                                                <th scope="col">#</th>
-                                                <th scope="col">Name</th>
-                                                <th scope="col">Position</th>
-                                                <th scope="col">Age</th>
-                                                <th scope="col">Start Date</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <th>1</th>
-                                                <td>Brandon Jacob</td>
-                                                <td>Designer</td>
-                                                <td>28</td>
-                                                <td>2016-05-25</td>
-                                            </tr>
-                                            <tr>
-                                                <th>2</th>
-                                                <td>Bridie Kessler</td>
-                                                <td>Developer</td>
-                                                <td>35</td>
-                                                <td>2014-12-05</td>
-                                            </tr>
-                                            <tr>
-                                                <th>3</th>
-                                                <td>Ashleigh Langosh</td>
-                                                <td>Finance</td>
-                                                <td>45</td>
-                                                <td>2011-08-12</td>
-                                            </tr>
-                                            <tr>
-                                                <th>4</th>
-                                                <td>Angus Grady</td>
-                                                <td>HR</td>
-                                                <td>34</td>
-                                                <td>2012-06-11</td>
-                                            </tr>
-                                            <tr>
-                                                <th>5</th>
-                                                <td>Raheem Lehner</td>
-                                                <td>Dynamic Division Officer</td>
-                                                <td>47</td>
-                                                <td>2011-04-19</td>
-                                            </tr>
-                                            <tr>
-                                                <th>1</th>
-                                                <td>Brandon Jacob</td>
-                                                <td>Designer</td>
-                                                <td>28</td>
-                                                <td>2016-05-25</td>
-                                            </tr>
-                                            <tr>
-                                                <th>2</th>
-                                                <td>Bridie Kessler</td>
-                                                <td>Developer</td>
-                                                <td>35</td>
-                                                <td>2014-12-05</td>
-                                            </tr>
-                                            <tr>
-                                                <th>3</th>
-                                                <td>Ashleigh Langosh</td>
-                                                <td>Finance</td>
-                                                <td>45</td>
-                                                <td>2011-08-12</td>
-                                            </tr>
-                                            <tr>
-                                                <th>4</th>
-                                                <td>Angus Grady</td>
-                                                <td>HR</td>
-                                                <td>34</td>
-                                                <td>2012-06-11</td>
-                                            </tr>
-                                            <tr>
-                                                <th>5</th>
-                                                <td>Raheem Lehner</td>
-                                                <td>Dynamic Division Officer</td>
-                                                <td>47</td>
-                                                <td>2011-04-19</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
-
-                            <div class="card">
-                                <div class="card-body">
-                                    <h5 class="card-title">Tabla de Pacientes</h5>
-
-                                    <table class="table table-striped">
-                                        <thead>
-                                            <tr>
-                                                <th scope="col">#</th>
-                                                <th scope="col">Name</th>
-                                                <th scope="col">Position</th>
-                                                <th scope="col">Age</th>
-                                                <th scope="col">Start Date</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <th>1</th>
-                                                <td>Brandon Jacob</td>
-                                                <td>Designer</td>
-                                                <td>28</td>
-                                                <td>2016-05-25</td>
-                                            </tr>
-                                            <tr>
-                                                <th scope="row">2</th>
-                                                <td>Bridie Kessler</td>
-                                                <td>Developer</td>
-                                                <td>35</td>
-                                                <td>2014-12-05</td>
-                                            </tr>
-                                            <tr>
-                                                <th scope="row">3</th>
-                                                <td>Ashleigh Langosh</td>
-                                                <td>Finance</td>
-                                                <td>45</td>
-                                                <td>2011-08-12</td>
-                                            </tr>
-                                            <tr>
-                                                <th scope="row">4</th>
-                                                <td>Angus Grady</td>
-                                                <td>HR</td>
-                                                <td>34</td>
-                                                <td>2012-06-11</td>
-                                            </tr>
-                                            <tr>
-                                                <th scope="row">5</th>
-                                                <td>Raheem Lehner</td>
-                                                <td>Dynamic Division Officer</td>
-                                                <td>47</td>
-                                                <td>2011-04-19</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-
-                                </div>
-                            </div>
-
-                        </div>
-
-                    </div>
-                </section>
                 <div class="row">
+                    <section class="section">
+                        <div class="row">
+                            <div class="col-lg-6">
+
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Tabla de Administradores</h5>
+
+                                        <table class="table table-striped" id="superadmin-table">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">#</th>
+                                                    <th scope="col">Name</th>
+                                                    <th scope="col">Position</th>
+                                                    <th scope="col">Age</th>
+                                                    <th scope="col">Acción</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th class="row-id">1</th>
+                                                    <td>Brandon Jacob</td>
+                                                    <td>Designer</td>
+                                                    <td>28</td>
+                                                    <td>
+                                                        <button type="button" class="btn btn-primary    " data-bs-toggle="modal"
+                                                                data-bs-target="#staticBackdrop">Loguear
+                                                        </button>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th class="row-id">2</th>
+                                                    <td>Bridie Kessler</td>
+                                                    <td>Developer</td>
+                                                    <td>35</td>
+                                                    <td>
+                                                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                                                data-bs-target="#staticBackdrop">Loguear
+                                                        </button>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th class="row-id">3</th>
+                                                    <td>Ashleigh Langosh</td>
+                                                    <td>Finance</td>
+                                                    <td>45</td>
+                                                    <td>
+                                                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                                                data-bs-target="#staticBackdrop">Loguear
+                                                        </button>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th class="row-id">4</th>
+                                                    <td>Angus Grady</td>
+                                                    <td>HR</td>
+                                                    <td>34</td>
+                                                    <td>
+                                                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                                                data-bs-target="#staticBackdrop">Loguear
+                                                        </button>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th class="row-id">5</th>
+                                                    <td>Raheem Lehner</td>
+                                                    <td>Dynamic Division Officer</td>
+                                                    <td>47</td>
+                                                    <td>
+                                                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                                                data-bs-target="#staticBackdrop">Loguear
+                                                        </button>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th class="row-id">6</th>
+                                                    <td>Brandon Jacob</td>
+                                                    <td>Designer</td>
+                                                    <td>28</td>
+                                                    <td>
+                                                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                                                data-bs-target="#staticBackdrop">Loguear
+                                                        </button>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th class="row-id">7</th>
+                                                    <td>Bridie Kessler</td>
+                                                    <td>Developer</td>
+                                                    <td>35</td>
+                                                    <td>
+                                                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                                                data-bs-target="#staticBackdrop">Loguear
+                                                        </button>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th class="row-id">8</th>
+                                                    <td>Ashleigh Langosh</td>
+                                                    <td>Finance</td>
+                                                    <td>45</td>
+                                                    <td>
+                                                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                                                data-bs-target="#staticBackdrop">Loguear
+                                                        </button>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th class="row-id">9</th>
+                                                    <td>Angus Grady</td>
+                                                    <td>HR</td>
+                                                    <td>34</td>
+                                                    <td>
+                                                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                                                data-bs-target="#staticBackdrop">Loguear
+                                                        </button>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th class="row-id">10</th>
+                                                    <td>Raheem Lehner</td>
+                                                    <td>Dynamic Division Officer</td>
+                                                    <td>47</td>
+                                                    <td>
+                                                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                                                data-bs-target="#staticBackdrop">Loguear
+                                                        </button>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th class="row-id">11</th>
+                                                    <td>Brandon Jacob</td>
+                                                    <td>Designer</td>
+                                                    <td>28</td>
+                                                    <td>
+                                                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                                                data-bs-target="#staticBackdrop">Loguear
+                                                        </button>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th class="row-id">12</th>
+                                                    <td>Bridie Kessler</td>
+                                                    <td>Developer</td>
+                                                    <td>35</td>
+                                                    <td>
+                                                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                                                data-bs-target="#staticBackdrop">Loguear
+                                                        </button>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th class="row-id">13</th>
+                                                    <td>Ashleigh Langosh</td>
+                                                    <td>Finance</td>
+                                                    <td>45</td>
+                                                    <td>
+                                                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                                                data-bs-target="#staticBackdrop">Loguear
+                                                        </button>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th class="row-id">14</th>
+                                                    <td>Angus Grady</td>
+                                                    <td>HR</td>
+                                                    <td>34</td>
+                                                    <td>
+                                                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                                                data-bs-target="#staticBackdrop">Loguear
+                                                        </button>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th class="row-id">15</th>
+                                                    <td>Raheem Lehner</td>
+                                                    <td>Dynamic Division Officer</td>
+                                                    <td>47</td>
+                                                    <td>
+                                                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                                                data-bs-target="#staticBackdrop">Loguear
+                                                        </button>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <div id="pagination" style="width: 100%; text-align: center;">
+                                            <button type="button" class="btn btn-primary" id="prev-btn"
+                                                    style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;font-size: 16px">
+                                                <
+                                            </button>
+                                            <span id="page-num">1</span>
+                                            <button type="button" class="btn btn-primary " id="next-btn"
+                                                    style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;font-size: 16px">
+                                                >
+                                            </button>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Tabla de Doctores</h5>
+
+                                        <table class="table table-striped">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">#</th>
+                                                    <th scope="col">Name</th>
+                                                    <th scope="col">Position</th>
+                                                    <th scope="col">Age</th>
+                                                    <th scope="col">Start Date</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th>1</th>
+                                                    <td>Brandon Jacob</td>
+                                                    <td>Designer</td>
+                                                    <td>28</td>
+                                                    <td>2016-05-25</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>2</th>
+                                                    <td>Bridie Kessler</td>
+                                                    <td>Developer</td>
+                                                    <td>35</td>
+                                                    <td>2014-12-05</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>3</th>
+                                                    <td>Ashleigh Langosh</td>
+                                                    <td>Finance</td>
+                                                    <td>45</td>
+                                                    <td>2011-08-12</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>4</th>
+                                                    <td>Angus Grady</td>
+                                                    <td>HR</td>
+                                                    <td>34</td>
+                                                    <td>2012-06-11</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>5</th>
+                                                    <td>Raheem Lehner</td>
+                                                    <td>Dynamic Division Officer</td>
+                                                    <td>47</td>
+                                                    <td>2011-04-19</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="col-lg-6">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Tabla de Administrativos</h5>
+
+                                        <table class="table table-striped">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">#</th>
+                                                    <th scope="col">Name</th>
+                                                    <th scope="col">Position</th>
+                                                    <th scope="col">Age</th>
+                                                    <th scope="col">Start Date</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th>1</th>
+                                                    <td>Brandon Jacob</td>
+                                                    <td>Designer</td>
+                                                    <td>28</td>
+                                                    <td>2016-05-25</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>2</th>
+                                                    <td>Bridie Kessler</td>
+                                                    <td>Developer</td>
+                                                    <td>35</td>
+                                                    <td>2014-12-05</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>3</th>
+                                                    <td>Ashleigh Langosh</td>
+                                                    <td>Finance</td>
+                                                    <td>45</td>
+                                                    <td>2011-08-12</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>4</th>
+                                                    <td>Angus Grady</td>
+                                                    <td>HR</td>
+                                                    <td>34</td>
+                                                    <td>2012-06-11</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>5</th>
+                                                    <td>Raheem Lehner</td>
+                                                    <td>Dynamic Division Officer</td>
+                                                    <td>47</td>
+                                                    <td>2011-04-19</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>1</th>
+                                                    <td>Brandon Jacob</td>
+                                                    <td>Designer</td>
+                                                    <td>28</td>
+                                                    <td>2016-05-25</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>2</th>
+                                                    <td>Bridie Kessler</td>
+                                                    <td>Developer</td>
+                                                    <td>35</td>
+                                                    <td>2014-12-05</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>3</th>
+                                                    <td>Ashleigh Langosh</td>
+                                                    <td>Finance</td>
+                                                    <td>45</td>
+                                                    <td>2011-08-12</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>4</th>
+                                                    <td>Angus Grady</td>
+                                                    <td>HR</td>
+                                                    <td>34</td>
+                                                    <td>2012-06-11</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>5</th>
+                                                    <td>Raheem Lehner</td>
+                                                    <td>Dynamic Division Officer</td>
+                                                    <td>47</td>
+                                                    <td>2011-04-19</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Tabla de Pacientes</h5>
+
+                                        <table class="table table-striped">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">#</th>
+                                                    <th scope="col">Name</th>
+                                                    <th scope="col">Position</th>
+                                                    <th scope="col">Age</th>
+                                                    <th scope="col">Start Date</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th>1</th>
+                                                    <td>Brandon Jacob</td>
+                                                    <td>Designer</td>
+                                                    <td>28</td>
+                                                    <td>2016-05-25</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">2</th>
+                                                    <td>Bridie Kessler</td>
+                                                    <td>Developer</td>
+                                                    <td>35</td>
+                                                    <td>2014-12-05</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">3</th>
+                                                    <td>Ashleigh Langosh</td>
+                                                    <td>Finance</td>
+                                                    <td>45</td>
+                                                    <td>2011-08-12</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">4</th>
+                                                    <td>Angus Grady</td>
+                                                    <td>HR</td>
+                                                    <td>34</td>
+                                                    <td>2012-06-11</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">5</th>
+                                                    <td>Raheem Lehner</td>
+                                                    <td>Dynamic Division Officer</td>
+                                                    <td>47</td>
+                                                    <td>2011-04-19</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </section>
+
 
                     <!-- Left side columns -->
                     <div class="col-lg-8">
@@ -945,6 +952,7 @@
 
                                 </div>
                             </div><!-- End Revenue Card -->
+
 
                             <!-- Customers Card -->
                             <div class="col-xxl-4 col-xl-12">
@@ -1065,6 +1073,8 @@
                                 </div>
                             </div><!-- End Reports -->
 
+
+
                             <!-- Recent Sales -->
                             <div class="col-12">
                                 <div class="card recent-sales overflow-auto">
@@ -1097,35 +1107,35 @@
                                             </thead>
                                             <tbody>
                                                 <tr>
-                                                    <th scope="row"><a href="#">#2457</a></th>
+                                                    <th><a href="#">#2457</a></th>
                                                     <td>Brandon Jacob</td>
                                                     <td><a href="#" class="text-primary">At praesentium minu</a></td>
                                                     <td>$64</td>
                                                     <td><span class="badge bg-success">Approved</span></td>
                                                 </tr>
                                                 <tr>
-                                                    <th scope="row"><a href="#">#2147</a></th>
+                                                    <th><a href="#">#2147</a></th>
                                                     <td>Bridie Kessler</td>
                                                     <td><a href="#" class="text-primary">Blanditiis dolor omnis similique</a></td>
                                                     <td>$47</td>
                                                     <td><span class="badge bg-warning">Pending</span></td>
                                                 </tr>
                                                 <tr>
-                                                    <th scope="row"><a href="#">#2049</a></th>
+                                                    <th><a href="#">#2049</a></th>
                                                     <td>Ashleigh Langosh</td>
                                                     <td><a href="#" class="text-primary">At recusandae consectetur</a></td>
                                                     <td>$147</td>
                                                     <td><span class="badge bg-success">Approved</span></td>
                                                 </tr>
                                                 <tr>
-                                                    <th scope="row"><a href="#">#2644</a></th>
+                                                    <th><a href="#">#2644</a></th>
                                                     <td>Angus Grady</td>
                                                     <td><a href="#" class="text-primar">Ut voluptatem id earum et</a></td>
                                                     <td>$67</td>
                                                     <td><span class="badge bg-danger">Rejected</span></td>
                                                 </tr>
                                                 <tr>
-                                                    <th scope="row"><a href="#">#2644</a></th>
+                                                    <th><a href="#">#2644</a></th>
                                                     <td>Raheem Lehner</td>
                                                     <td><a href="#" class="text-primary">Sunt similique distinctio</a></td>
                                                     <td>$165</td>
@@ -1171,35 +1181,35 @@
                                             </thead>
                                             <tbody>
                                                 <tr>
-                                                    <th scope="row"><a href="#"><img src="assets/img/product-1.jpg" alt=""></a></th>
+                                                    <th><a href="#"><img src="assets/img/product-1.jpg" alt=""></a></th>
                                                     <td><a href="#" class="text-primary fw-bold">Ut inventore ipsa voluptas nulla</a></td>
                                                     <td>$64</td>
                                                     <td class="fw-bold">124</td>
                                                     <td>$5,828</td>
                                                 </tr>
                                                 <tr>
-                                                    <th scope="row"><a href="#"><img src="assets/img/product-2.jpg" alt=""></a></th>
+                                                    <th><a href="#"><img src="assets/img/product-2.jpg" alt=""></a></th>
                                                     <td><a href="#" class="text-primary fw-bold">Exercitationem similique doloremque</a></td>
                                                     <td>$46</td>
                                                     <td class="fw-bold">98</td>
                                                     <td>$4,508</td>
                                                 </tr>
                                                 <tr>
-                                                    <th scope="row"><a href="#"><img src="assets/img/product-3.jpg" alt=""></a></th>
+                                                    <th><a href="#"><img src="assets/img/product-3.jpg" alt=""></a></th>
                                                     <td><a href="#" class="text-primary fw-bold">Doloribus nisi exercitationem</a></td>
                                                     <td>$59</td>
                                                     <td class="fw-bold">74</td>
                                                     <td>$4,366</td>
                                                 </tr>
                                                 <tr>
-                                                    <th scope="row"><a href="#"><img src="assets/img/product-4.jpg" alt=""></a></th>
+                                                    <th><a href="#"><img src="assets/img/product-4.jpg" alt=""></a></th>
                                                     <td><a href="#" class="text-primary fw-bold">Officiis quaerat sint rerum error</a></td>
                                                     <td>$32</td>
                                                     <td class="fw-bold">63</td>
                                                     <td>$2,016</td>
                                                 </tr>
                                                 <tr>
-                                                    <th scope="row"><a href="#"><img src="assets/img/product-5.jpg" alt=""></a></th>
+                                                    <th><a href="#"><img src="assets/img/product-5.jpg" alt=""></a></th>
                                                     <td><a href="#" class="text-primary fw-bold">Sit unde debitis delectus repellendus</a></td>
                                                     <td>$79</td>
                                                     <td class="fw-bold">41</td>
@@ -1508,7 +1518,7 @@
         <!-- ======= Footer ======= -->
         <footer id="footer" class="footer">
             <div class="copyright">
-                &copy; Copyright <strong><span>Clínica InterPUCP</span></strong>. All Rights Reserved
+                &copy; Copyright <strong><span>NiceAdmin</span></strong>. All Rights Reserved
             </div>
             <div class="credits">
                 <!-- All the links in the footer should remain intact. -->
@@ -1533,9 +1543,10 @@
 
         <!-- Template Main JS File -->
         <script src="assets/js/main.js"></script>
-
         <script src="assets/js/paginacion_table.js"></script>
 
+
     </body>
+
 
 </html>
