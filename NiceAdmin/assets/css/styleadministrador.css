@@ -12,7 +12,9 @@
 :root {
   scroll-behavior: smooth;
 }
+/* Styles calendario*/
 
+/*End styles calendario*/
 body {
   font-family: "Open Sans", sans-serif;
   background: #f6f9ff;
