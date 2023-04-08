@@ -37,6 +37,10 @@ $(document).ready(function() {
         $('#next-btn').click(function() {
             updateIndex(true);
         });
+        $('#AdministradorTable').css('display', '');
+    /*    $('#superadmin-table').css('display', '');
+        $('#pagination').css('display', '');*/
+
     }
 
     setupTablePagination($('#superadmin-table'), 5);
@@ -56,4 +60,10 @@ $(document).ready(function() {
         $('#staticBackdropLabel').html(`Iniciar sesión`);
         $('.modal-body').html(`¿Loguearse como ${firstName} ubicado en la fila ${id1}?` );
     });
+    /*
+    setTimeout(function() {
+        $('#superadmin-table').css('display', '');
+        $('#pagination').css('display', '');
+    }, 0);
+     */
 });

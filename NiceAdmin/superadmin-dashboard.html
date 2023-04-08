@@ -542,10 +542,10 @@
                         <div class="col-lg-6">
 
                             <div class="card">
-                                <div class="card-body">
-                                    <h5 class="card-title">Tabla de Administradores</h5>
+                                <div class="card-body" id="AdministradorTable" style="display: none">
+                                    <h5 class="card-title" >Tabla de Administradores</h5>
 
-                                    <table class="table table-striped" id="superadmin-table">
+                                    <table class="table table-striped" id="superadmin-table"> <!--style="display: none"-->
                                         <thead>
                                             <tr>
                                                 <th scope="col">#</th>
@@ -562,6 +562,9 @@
                                                 <td>Designer</td>
                                                 <td>28</td>
                                                 <td><button type="button" class="btn btn-primary    " data-bs-toggle="modal" data-bs-target="#staticBackdrop">Loguear</button></td></tr>
+<!--
+                                            <td><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop" style="background-color: #8a5bb3;">Loguear</button></td>
+-->
                                             <tr>
                                                 <th class="row-id">2</th>
                                                 <td>Bridie Kessler</td>
@@ -648,7 +651,7 @@
                                                 <td><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Loguear</button></td></tr>
                                         </tbody>
                                     </table>
-                                    <div id="pagination" style="width: 100%; text-align: center;">
+                                    <div id="pagination" style="width: 100%; text-align: center"> <!--display: none;">-->
                                         <button type="button" class="btn btn-primary" id="prev-btn"
                                                 style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;font-size: 16px">
                                             <
@@ -662,7 +665,7 @@
 
                                 </div>
                             </div>
-                            <div class="card">
+                          <!--  <div class="card">
                                 <div class="card-body">
                                     <h5 class="card-title">Tabla de Doctores</h5>
 
@@ -715,7 +718,7 @@
                                         </tbody>
                                     </table>
                                 </div>
-                            </div>
+                            </div>-->
 
                         </div>
 
