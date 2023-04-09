@@ -4,7 +4,7 @@
 
 body {
 font-family: "Open Sans", sans-serif;
-background: rgba(10, 161, 221, 0.1);
+background: rgb(230, 230, 230);
 color: #444444;
 min-height: 91vh;
 }
@@ -33,25 +33,20 @@ font-family: "Nunito", sans-serif;
 #main {
     position: relative;
     border-radius: 20px;
-    top: 100px;
-    /*left: 10px; AGREGAR EN MEDIA QUERiES*/
-    right: 10px;
-    width: 80%;
-    background-color: white;
+    top: 110px;
+    background: rgb(230, 230, 230);
     
-    padding: 20px;
     overflow-y: auto;
     scrollbar-width: thin;
     scrollbar-color: #aab7cf transparent;
-    box-shadow: 0px 0px 20px rgba(1, 41, 112, 0.1);
 
-padding: 20px 30px;
+padding: 30px 10px;
 transition: all 0.3s;
 }
 
 @media (max-width: 1199px) {
 #main {
-    padding: 20px;
+    padding: 25px 40px;
 }
 }
 
@@ -374,7 +369,7 @@ line-height: 1;
     transition: all 0.5s;
     z-index: 997;
     box-shadow: 0px 2px 20px rgba(1, 41, 112, 0.1);
-    padding: 15px 4vw;
+    padding: 17px 4vw;
     background-color: white;
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
@@ -594,13 +589,12 @@ background-color: #f6f9ff;
 .sidebar {
     border-radius: 20px;
     position: fixed;
-top: 100px;
-left: 10px;
-bottom: 10px;
-width: 270px;
+top: 110px;
+left: 15px;
+bottom: 15px;
 z-index: 996;
 transition: all 0.3s;
-padding: 20px;
+padding: 20px 35px 20px 20px;
 overflow-y: auto;
 scrollbar-width: thin;
 scrollbar-color: #aab7cf transparent;
@@ -628,7 +622,7 @@ background-color: #aab7cf;
 
 #main,
 #footer {
-    margin-left: 300px;
+    margin-left: 255px;
 }
 }
 
@@ -1243,7 +1237,7 @@ color: #012970;
 
 .botonCita{
     background-color: #0AA1DD;
-    border-radius: 30px;
+    border-radius: 50px;
     border: 0;
     padding: 14px 17px;
     margin-left: 2vw;
@@ -1255,44 +1249,62 @@ color: #012970;
     color: white;
 }
 
-/* MAIN */
+
+/* Main */
 
 .encabezado{
-    font-size: 2.2rem;
+    font-size: 2.1rem;
     font-weight: 700;
+    width: 100%;
+    margin: 0 50px;
     color: #435067;
 }
 
-.tablaPagos{
-    margin: 50px auto;
-    width: 95%;
+.table{
     font-size: 0.9rem;
     font-family: 'Nunito', sans-serif;
 }
 
-.tablaPagos tbody{
-    border-radius: 10px;
+.tabla{
+    margin: 40px auto;
+    width: 100%;
+    border-radius: 15px;
+    padding: 10px 50px;
+    background-color: white;
+    box-shadow: 0px 2px 20px rgba(0, 13, 35, 0.1);
 }
 
-.tablaPagos th{
+.tabla th{
+    font-size: 1rem;
     padding: 15px 0 15px 20px;
 }
 
-.tablaPagos td{
-    padding: 15px 0 15px 20px;
+.tabla td{
+    padding: 20px 0 20px 20px;
 }
 
 .verReciboBoton{
     padding: 10px 15px;
     font-weight: 700;
     color: black;
-    background-color: rgb(230, 230, 230);
+    background-color: rgb(245, 245, 245);
     border-radius: 20px;
     border: none;
+    box-shadow: 0px 0px 5px rgb(105, 105, 105);
 }
 
 .verReciboBoton:hover{
     background-color: rgb(170, 170, 170);
     color: black;
+    box-shadow: none;
     transition: all 0.3s;
+}
+
+.pagination{
+    margin: 35px 0 10px 0;
+}
+
+.page-link{
+    font-size: 0.9rem;
+    color: rgb(80, 80, 80);
 }
