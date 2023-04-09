@@ -32,7 +32,6 @@ font-family: "Nunito", sans-serif;
 --------------------------------------------------------------*/
 #main {
     position: relative;
-    border-radius: 20px;
     top: 110px;
     background: rgb(230, 230, 230);
     
@@ -40,7 +39,7 @@ font-family: "Nunito", sans-serif;
     scrollbar-width: thin;
     scrollbar-color: #aab7cf transparent;
 
-padding: 30px 10px;
+padding: 30px 10px 0 10px;
 transition: all 0.3s;
 }
 
@@ -102,13 +101,13 @@ opacity: 1;
 --------------------------------------------------------------*/
 /* Dropdown menus */
 .dropdown-menu {
-border-radius: 4px;
+border-radius: 10px;
 padding: 10px 0;
 animation-name: dropdown-animate;
 animation-duration: 0.2s;
 animation-fill-mode: both;
 border: 0;
-box-shadow: 0 5px 30px 0 rgba(82, 63, 105, 0.2);
+box-shadow: 0 5px 30px 0 rgba(82, 63, 105, 0.3);
 }
 
 .dropdown-menu .dropdown-header,
@@ -1235,12 +1234,17 @@ color: #012970;
     height: 60px;
 }
 
+@media(min-width: 1200px){
+    .botonToggle{
+        display: none;
+    }
+}
+
 .botonCita{
     background-color: #0AA1DD;
     border-radius: 50px;
     border: 0;
     padding: 14px 17px;
-    margin-left: 2vw;
     font-weight: 600;
 }
 
@@ -1255,7 +1259,7 @@ color: #012970;
 .encabezado{
     font-size: 2.1rem;
     font-weight: 700;
-    width: 100%;
+    width: 50%;
     margin: 0 50px;
     color: #435067;
 }
@@ -1266,12 +1270,13 @@ color: #012970;
 }
 
 .tabla{
-    margin: 40px auto;
+    margin: 40px auto 0 auto;
     width: 100%;
     border-radius: 15px;
     padding: 10px 50px;
     background-color: white;
     box-shadow: 0px 2px 20px rgba(0, 13, 35, 0.1);
+    overflow-x: auto;
 }
 
 .tabla th{
@@ -1291,17 +1296,17 @@ color: #012970;
     border-radius: 20px;
     border: none;
     box-shadow: 0px 0px 5px rgb(105, 105, 105);
+    transition: all 0.3s;
 }
 
 .verReciboBoton:hover{
     background-color: rgb(170, 170, 170);
     color: black;
     box-shadow: none;
-    transition: all 0.3s;
 }
 
 .pagination{
-    margin: 35px 0 10px 0;
+    margin: 35px 0 8px 0;
 }
 
 .page-link{
