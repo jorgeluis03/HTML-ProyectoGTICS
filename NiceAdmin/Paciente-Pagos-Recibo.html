@@ -12,6 +12,9 @@
     <!-- GOOGLE FONTS -->
     <link href="https://fonts.gstatic.com" rel="preconnect">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
     <!-- CSS -->
     <link rel="stylesheet" href="assets/css/stylePacienteCustom.css">
@@ -251,8 +254,65 @@
     <main id="main" class="main">
 
         <h1 class="encabezado">Recibo - 281FH19701228FG</h1>
-        <section class="seccionPrincipal">
+        <section class="seccionPrincipal recibo">
+            <div class="row encabezadoRecibo">
+                <div class="col-10">
+                    <h2 class="subEncabezado">Recibo - 13/12/2022</h2>
+                </div>
+                <div class="col-2">
+                    <button class="btn btn-secondary botonImprimir">Imprimir</button>
+                </div>
+            </div>
 
+            <!-- Información de la clínica -->
+            <div class="informacionClinica">
+                <p>
+                    <span class="informacionClinicaTitulo">Clínica INTERPUC</span>
+                    <br>
+                    Dirección Imaginaria
+                    <br>
+                    Lima, Perú
+                    <br>
+                    www.interpucp.com.pe
+                </p>
+            </div>
+
+            <!-- Informacion recibo y pago -->
+            <div class="row informacionRecibo">
+                <div class="col-6">
+                    <p>Paciente:<span class="informacionReciboDato">Juanchito Palacios Castro</span></p>
+                    <p>Seguro:<span class="informacionReciboDato">Pacífico EPS</span></p>
+                    <p>Estado:<span class="informacionReciboDato">Cancelado</span></p>
+                </div>
+                <div class="col-6">
+                    <p>Fecha emitida:<span class="informacionReciboDato">13/12/2022</span></p>
+                    <p>Fecha cancelada:<span class="informacionReciboDato">13/12/2022</span></p>
+                    <p>Tipo de pago:<span class="informacionReciboDato">Visa ***1234</span></p>
+                </div>
+            </div>
+
+            <section class="informacionPago">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Por concepto de</th>
+                            <th>Cantidad</th>
+                            <th>Precio</th>
+                            <th>Importe total</th>
+                            <th>Importe con seguro</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Lorem ipsum dol amet consectetur</td>
+                            <td>1</td>
+                            <td>S/ 1300.00</td>
+                            <td>S/ 1300.00</td>
+                            <td>S/ 130.00</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
         </section>
 
     </main>
