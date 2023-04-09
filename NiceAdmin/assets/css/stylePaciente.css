@@ -1300,24 +1300,3 @@ h6 {
   font-size: 13px;
   color: #012970;
 }
-
-
-/* PROPIO ---------------------------------*/
-.tituloNavBar{
-  display: inline-block;
-  font-weight: 700;
-  font-size: 2rem;
-  color: red;
-}
-
-.logoNavBar{
-  height: 60px;
-  border: solid 3px #012970;
-}
-
-.fotoPerfil{
-  border-radius: 100px;
-  height: 40px;
-}
-
-/*-----------------------------------------*/
