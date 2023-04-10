@@ -3,11 +3,11 @@ $(document).ready(function() {
         table.find('tbody tr').hide()
             .slice(startIndex, endIndex).show();
 
-        $('#prev-btn').prop('disabled', startIndex === 0);
-        $('#next-btn').prop('disabled', endIndex === table.find('tbody tr').length);
+        $('#prev-btn3').prop('disabled', startIndex === 0);
+        $('#next-btn3').prop('disabled', endIndex >= table.find('tbody tr').length);
 
         var currentPage = startIndex / 5 + 1;
-        $('#page-num').text(currentPage);
+        $('#page-num3').text(currentPage);
     }
 
     function setupTablePagination(table, itemsPerPage) {
@@ -30,20 +30,20 @@ $(document).ready(function() {
             showTableSegment(table, startIndex, endIndex);
         }
 
-        $('#prev-btn').click(function() {
+        $('#prev-btn3').click(function() {
             updateIndex(false);
         });
 
-        $('#next-btn').click(function() {
+        $('#next-btn3').click(function() {
             updateIndex(true);
         });
-        $('#AdministradorTable').css('display', '');
-    /*    $('#superadmin-table').css('display', '');
-        $('#pagination').css('display', '');*/
+        $('#DoctoresTable').css('display', '');
+        /*    $('#superadmin-table').css('display', '');
+            $('#pagination').css('display', '');*/
 
     }
 
-    setupTablePagination($('#superadmin-table'), 5);
+    setupTablePagination($('#superadmin_Doctores_table'), 5);
 
     var firstName;
     var lastName;
