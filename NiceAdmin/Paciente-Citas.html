@@ -250,50 +250,54 @@
 
         <h1 class="encabezado">Citas agendadas</h1>
         <section class="seccionPrincipal">
-          <table class="table">
-            <thead>
-              <tr>
-                <th>Especialidad</th>
-                <th>Pago</th>
-                <th>Fecha</th>
-                <th>Hora</th>
-                <th>Tipo de cita</th>
-                <th></th>
-              </tr>
-            </thead>
-              <tbody>
+
+            <a class="btn btn-primary filtroSeleccionado">Próximas citas</a>
+            <a class="btn btn-secondary filtroNoSeleccionado">Exámenes pendientes</a>
+
+            <table class="table">
+                <thead>
                 <tr>
-                  <td>Neurología</td>
-                  <td>José Perez</td>
-                  <td>15/04/23</td>
-                  <td>10:00 Hrs.</td>
-                  <td>Presencial</td>
-                  <td>
-                    <a class="botonVerMas" data-bs-toggle="modal" data-bs-target="#citaModalPresencial">Ver más</a>
-                  </td>
+                    <th>Especialidad</th>
+                    <th>Pago</th>
+                    <th>Fecha</th>
+                    <th>Hora</th>
+                    <th>Tipo de cita</th>
+                    <th></th>
                 </tr>
-                <tr>
-                  <td>Psicología</td>
-                  <td>María Godoy</td>
-                  <td>27/05/23</td>
-                  <td>13:00 Hrs.</td>
-                  <td>Virtual</td>
-                  <td>
-                    <a class="botonVerMas" data-bs-toggle="modal" data-bs-target="#citaModalVirtual">Ver más</a>
-                  </td>
-                </tr>
-                <tr>
-                  <td>Psicología</td>
-                  <td>María Godoy</td>
-                  <td>10/05/23</td>
-                  <td>13:00 Hrs.</td>
-                  <td>Presencial</td>
-                  <td>
-                    <a class="botonVerMas" href="#">Ver más</a>
-                  </td>
-                </tr>
-              </tbody>
-          </table>
+                </thead>
+                <tbody>
+                    <tr>
+                    <td>Neurología</td>
+                    <td>José Perez</td>
+                    <td>15/04/23</td>
+                    <td>10:00 Hrs.</td>
+                    <td>Presencial</td>
+                    <td>
+                        <a class="botonVerMas" data-bs-toggle="modal" data-bs-target="#citaModalPresencial">Ver más</a>
+                    </td>
+                    </tr>
+                    <tr>
+                    <td>Psicología</td>
+                    <td>María Godoy</td>
+                    <td>27/05/23</td>
+                    <td>13:00 Hrs.</td>
+                    <td>Virtual</td>
+                    <td>
+                        <a class="botonVerMas" data-bs-toggle="modal" data-bs-target="#citaModalVirtual">Ver más</a>
+                    </td>
+                    </tr>
+                    <tr>
+                    <td>Psicología</td>
+                    <td>María Godoy</td>
+                    <td>10/05/23</td>
+                    <td>13:00 Hrs.</td>
+                    <td>Presencial</td>
+                    <td>
+                        <a class="botonVerMas" href="#">Ver más</a>
+                    </td>
+                    </tr>
+                </tbody>
+            </table>
 
           <!-- Modal Presencial-->
         <div class="modal fade" id="citaModalPresencial" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -381,7 +385,7 @@
             </div>
         </div>
     
-          <!-- Descomentar cuando se tienen más de 6 filas en la tabla
+          <!-- Descomentar cuando se tienen más de 5 filas en la tabla
           <nav>
             <ul class="pagination justify-content-center">
                 <li class="page-item"><a class="page-link" href="#">Previous</a></li>
