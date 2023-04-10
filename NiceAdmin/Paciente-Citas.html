@@ -251,8 +251,8 @@
         <h1 class="encabezado">Citas agendadas</h1>
         <section class="seccionPrincipal">
 
-            <a class="btn btn-primary filtroSeleccionado">Próximas citas</a>
-            <a class="btn btn-secondary filtroNoSeleccionado">Exámenes pendientes</a>
+            <a class="btn filtroSeleccionado">Próximas citas</a>
+            <a class="btn filtroNoSeleccionado">Exámenes pendientes</a>
 
             <table class="table">
                 <thead>
@@ -273,7 +273,7 @@
                     <td>10:00 Hrs.</td>
                     <td>Presencial</td>
                     <td>
-                        <a class="botonVerMas" data-bs-toggle="modal" data-bs-target="#citaModalPresencial">Ver más</a>
+                        <a class="botonVerMas" data-bs-toggle="modal" data-bs-target="#citaPresencialModal">Ver más</a>
                     </td>
                     </tr>
                     <tr>
@@ -283,7 +283,7 @@
                     <td>13:00 Hrs.</td>
                     <td>Virtual</td>
                     <td>
-                        <a class="botonVerMas" data-bs-toggle="modal" data-bs-target="#citaModalVirtual">Ver más</a>
+                        <a class="botonVerMas" data-bs-toggle="modal" data-bs-target="#citaVirtualModal">Ver más</a>
                     </td>
                     </tr>
                     <tr>
@@ -299,8 +299,8 @@
                 </tbody>
             </table>
 
-          <!-- Modal Presencial-->
-        <div class="modal fade" id="citaModalPresencial" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <!-- Modal Presencial-->
+        <div class="modal fade" id="citaPresencialModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered modal-lg">
                 <div class="modal-content">
                     <div class="modal-header">
@@ -345,7 +345,7 @@
         </div>
 
         <!-- Modal Virtual -->
-        <div class="modal fade" id="citaModalVirtual" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal fade" id="citaVirtualModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered modal-lg">
                 <div class="modal-content">
                     <div class="modal-header">
@@ -379,7 +379,7 @@
                         </div>
                     </div>
                     <div class="modal-footer mx-auto">
-                        <a class="btn btn-primary botonEntrarCita" href="Paciente-Citas-Virtual.html">Acceder a sesión virtual</a>
+                        <a class="btn btn-primary botonEntrarCita" href="Paciente-Citas-SesionVirtual.html">Acceder a sesión virtual</a>
                     </div>
                 </div>
             </div>
