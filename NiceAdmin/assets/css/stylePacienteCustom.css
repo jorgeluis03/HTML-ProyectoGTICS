@@ -1549,6 +1549,7 @@ p{
     border: 0;
     padding: 10px 20px;
     font-weight: 600;
+    color: white;
 }
 
 .botonActualizarConsentimientos:hover{
@@ -1748,4 +1749,45 @@ p{
 .botonReservarCitaHorario:hover{
     color: white;
     background-color:#197ce6;
+}
+
+/* Formulario reservar cita mediante perfil del doctor */
+
+.inputPaciente{
+    padding: 5px 10px;
+    border-radius: 8px;
+    border-color: #6c757d;
+}
+
+.cardConfirmacion{
+    background-color: white;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.cardTitulo{
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-top: 20px;
+}
+
+.cardTexto{
+    margin: 20px 40px 0 40px;
+    font-size: 1rem;;
+}
+
+.botonVolverInicio{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background-color: #0AA1DD;
+    border-radius: 50px;
+    border: 0;
+    padding: 10px 20px;
+    font-weight: 600;
+    color: white;   
+}
+
+.botonVolverInicio:hover{
+    background-color: #197ce6;
+    color: white;
 }
