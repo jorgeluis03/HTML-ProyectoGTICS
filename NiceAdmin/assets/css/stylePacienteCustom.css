@@ -1550,6 +1550,7 @@ p{
     padding: 10px 20px;
     font-weight: 600;
     color: white;
+    transition: all 0.3s;
 }
 
 .botonActualizarConsentimientos:hover{
