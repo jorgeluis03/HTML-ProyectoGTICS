@@ -13,6 +13,51 @@
   scroll-behavior: smooth;
 }
 /* Styles calendario*/
+.calendar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 200px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.month {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.weekdays {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 5px;
+}
+
+.days {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.day {
+  width: calc(100% / 7);
+  height: calc(100% / 5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8em;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.today {
+  background-color: #007bff;
+  color: #fff;
+}
 
 /*End styles calendario*/
 body {
