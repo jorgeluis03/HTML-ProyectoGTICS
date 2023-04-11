@@ -252,13 +252,87 @@
 
             <form>
 
-                <span>A presentado dolor abdominal los últimos 5 días?</span>
+                <div class="seccionCuestionario">
+                    <div class="textoCuestionario">
+                        ¿Ha presentado dolor abdominal en los últimos 5 días?
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault">
+                        <label class="form-check-label" for="flexRadioDefault1">
+                          Sí
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault">
+                        <label class="form-check-label" for="flexRadioDefault2">
+                          No
+                        </label>
+                    </div>
+                </div>
 
-                <div class="form-check consentimiento">
-                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                    <label class="form-check-label" for="flexCheckDefault">
-                        Consentimiento 5
-                    </label>
+                <div class="seccionCuestionario">
+                    <div class="textoCuestionario">
+                        Pregunta médica número 2:
+                    </div>
+                    <div class="respuestaCuestionario">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox">
+                            <label class="form-check-label">Opción 1</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox">
+                            <label class="form-check-label">Opción 2</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox">
+                            <label class="form-check-label">Opción 3</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox">
+                            <label class="form-check-label">Opción 4</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="seccionCuestionario">
+                    <div class="textoCuestionario">
+                        Pregunta médica número 3:
+                    </div>
+                    <div class="respuestaCuestionario">
+                        <input class="form-control" type="text">
+                    </div>
+                </div>
+
+                <div class="seccionCuestionario">
+                    <div class="textoCuestionario">
+                        Pregunta médica número 4:
+                    </div>
+                    <div class="respuestaCuestionario">
+                        <input class="form-control" type="text">
+                    </div>
+                </div>
+
+                <div class="seccionCuestionario">
+                    <div class="textoCuestionario">
+                        Pregunta médica número 5:
+                    </div>
+                    <div class="respuestaCuestionario">
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected>Selecciona una opción</option>
+                            <option value="1">Opción 1</option>
+                            <option value="2">Opción 2</option>
+                            <option value="3">Opción 3</option>
+                          </select>
+                    </div>
+                </div>
+
+                <div class="seccionCuestionario">
+                    <div class="textoCuestionario">
+                        Describa los síntomas adicionales que haya sentido la última semana:
+                    </div>
+                    <div class="respuestaCuestionario">
+                        <textarea class="form-control" cols="80" rows="3"></textarea>
+                    </div>
                 </div>
 
                 <a href="#" class="btn btn-primary botonActualizarConsentimientos" data-bs-toggle="modal" data-bs-target="#actualizarModal">Enviar</a>
