@@ -1450,6 +1450,12 @@ p{
     background-color: rgb(198, 0, 0);
 }
 
+/* Sección Dashboard */
+
+.sedeImg{
+    border-radius: 10px;
+}
+
 /* Sección Citas */
 
 .botonVerMas{
