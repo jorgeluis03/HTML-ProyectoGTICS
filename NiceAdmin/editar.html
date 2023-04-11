@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Invitar nuevo paciente</title>
+  <title>Editar formulario de referido</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -49,7 +49,7 @@
           <div class="modal-body">
           </div>
           <div class="modal-footer">
-            <a href="index.html" type="button" class="btn btn-primary">Invitar</a>
+            <a href="index.html" type="button" class="btn btn-primary">Editar paciente</a>
             <a href="index.html" type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</a>
           </div>
         </div>
@@ -519,54 +519,72 @@
   <main id="main" class="main">
 
     <div class="pagetitle">
-      <h1>Invitar nuevo paciente</h1>
+      <h1>Editar formulario de referido</h1>
       <nav>
         <ol class="breadcrumb">
           <li class="breadcrumb-item"><a>Administrativo</a></li>
           <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
-          <li class="breadcrumb-item active">Invitar</li>
+          <li class="breadcrumb-item active">Editar paciente</li>
         </ol>
       </nav>
     </div><!-- End Page Title -->
 
     <section class="section">
-      <div class="row align-items-center">
-        <div class="col-lg-10">
+      <div class="row centered">
+        <div class="col-lg-10 ">
 
           <div class="card">
             <div class="card-body">
-              <h5 class="card-title">Formulario de invitación</h5>
+              <h5 class="card-title">Alejandra Carreño <span>| Paciente referido</span></h5>
 
               <!-- General Form Elements -->
-              <form>
+              <form class="row g-3">
+                <div class="col-md-6">
+                  <label for="inputEmail5" class="form-label">Correo</label>
+                  <input type="email" class="form-control" id="inputEmail5" value="a.carrenio@gmail.com">
+                </div>
+                <div class="col-md-6">
+                  <label for="inputAddress5" class="form-label">Dirección</label>
+                  <input type="text" class="form-control" id="inputAddres5s" value="Santa Beatriz - Av. El Sol">
+                </div>
+                <div class="col-md-6">
+                  <label for="inputCity" class="form-label">Ciudad</label>
+                  <input type="text" class="form-control" id="inputCity" value="Lima">
+                </div>
+                <div class="col-md-4">
+                  <label for="inputState" class="form-label">Distrito</label>
+                  <select id="inputState" class="form-select">
+                    <option>Seleccionar...</option>
+                    <option selected>Aquí vivo</option>
+                  </select>
+                </div>
+                <div class="col-md-2">
+                  <label for="inputZip" class="form-label">Código postal</label>
+                  <input type="text" class="form-control" id="inputZip" value="15001">
+                </div>
+                <hr>
                 <div class="row mb-3">
-                  <label for="inputText" class="col-sm-2 col-form-label">Nombres</label>
+                  <label for="allergies" class="col-sm-2 col-form-label">Alergias</label>
                   <div class="col-sm-10">
-                    <input type="text" class="form-control">
+                    <div class="alert border-primary alert-dismissible fade show" role="alert">
+                      Paracetamol
+                      <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                    </div>
+                    <div class="alert border-primary alert-dismissible fade show" role="alert">
+                      Maní
+                      <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                    </div>
+                    <div class="alert border-primary alert-dismissible fade show" role="alert">
+                      Hormigas
+                      <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                    </div>
                   </div>
                 </div>
-                <div class="row mb-3">
-                  <label for="inputText" class="col-sm-2 col-form-label">Apellidos</label>
-                  <div class="col-sm-10">
-                    <input type="text" class="form-control">
-                  </div>
+                <div class="text-center">
+                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Guardar cambios</button>
+                  <a type="submit" class="btn btn-secondary" href="index.html">Cancelar</a>
                 </div>
-                <div class="row mb-3">
-                  <label for="inputEmail" class="col-sm-2 col-form-label">Correo</label>
-                  <div class="col-sm-10">
-                    <input type="email" class="form-control">
-                  </div>
-                </div>
-
-                <div class="row mb-3">
-                  <label class="col-sm-2 col-form-label"></label>
-                  <div class="col-sm-10">
-                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Enviar invitación</button>
-                    <a type="submit" class="btn btn-secondary" href="index.html">Cancelar</a>
-                  </div>
-                </div>
-
-              </form><!-- End General Form Elements -->
+              </form>
 
             </div>
           </div>
@@ -613,7 +631,7 @@
         var button = event.relatedTarget;
         var $row = $(button).closest('tr') // Asegúrate de buscar solo filas visibles
         $('#staticBackdropLabel').html(`Confirmación`);
-        $('.modal-body').html(`¿Seguro de que deseas invitar este paciente?`);
+        $('.modal-body').html(`Al aceptar, se cambiarán definitivamente la edición realizada. ¿Está seguro de continuar?`);
     });
 
 
