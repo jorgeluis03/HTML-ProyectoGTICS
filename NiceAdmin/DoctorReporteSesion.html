@@ -10,7 +10,7 @@
         <meta charset="utf-8">
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-        <title>Recibos - Doctor</title>
+        <title>Plantilla - Doctor</title>
         <meta content="" name="description">
         <meta content="" name="keywords">
 
@@ -280,7 +280,7 @@
                     </a>
                 </li><!-- End Dashboard Nav -->
                 <li class="nav-item">
-                    <a class="nav-link collapsed" href="DoctorReporteSesion.html">
+                    <a class="nav-link " href="DoctorReporteSesion.html">
                         <i class="bi bi-card-text"></i>
                         <span>Reportes</span>
                     </a>
@@ -293,7 +293,7 @@
                 </li><!-- End Profile Page Nav -->
 
                 <li class="nav-item">
-                    <a class="nav-link" href="DoctorRecibos.html">
+                    <a class="nav-link collapsed" href="DoctorRecibos.html">
                         <i class="bi bi-currency-exchange"></i>
                         <span>Recibos</span>
                     </a>
@@ -306,158 +306,87 @@
                     </a>
                 </li><!-- End Profile Page Nav -->
             </ul>
+            <br>
+            <div>
+                <button type="button" style="margin-top: 5px" class="btn btn-danger">Finalizar reporte</button>
+            </div>
 
         </aside><!-- End Sidebar-->
 
         <main id="main" class="main">
-            <div class="d-flex justify-content-between align-items-center">
-                <div style="position: relative;left: 115px" class="pagetitle">
-                    <h1>Recibos de pago</h1>
-                </div><!-- End Page Title -->
-                <div class="icon" >
-                    <a href="administrador-dashboard.html"><i class="bi bi-arrow-return-left"></i></a>
-                </div>
 
-            </div>
+
             <section class="section dashboard">
-                <div class="row">
+                <div class="row ">
 
-                    <!-- Left side columns -->
-                    <div  class="col-lg-10 container">
-                        <div class="row">
-
-                            <!-- Top Selling -->
-                            <div class="col-12">
-                                <div class="card top-selling overflow-auto container">
-
-
-
-                                    <div  class="card-body pb-0">
-                                        <h5 class="card-title">INGRESOS <span>| Sede San Isidro</span></h5>
-                                        <div class="container-fluid">
-                                            <form class="d-flex" role="search">
-                                                <input class="form-control me-2" type="search" placeholder="Buscar por Fecha" aria-label="Search">
-
-                                            </form>
-                                        </div>
-                                        <br>
-
-                                        <div style="height: 450px" class="d-flex flex-column" style="height: 300px; overflow: auto;">
-                                            <div class="table-responsive">
-                                                <table class="table table-striped table-hover">
-                                                    <thead>
-                                                        <tr>
-                                                            <th>Fecha</th>
-                                                            <th>Paciente</th>
-                                                            <th>Concepto</th>
-                                                            <th>Monto</th>
-                                                            <th>Forma de Pago</th>
-                                                            <th>Recibo</th>
-                                                        </tr>
-                                                    </thead>
-                                                    <tbody>
-                                                        <tr>
-                                                            <td>01/01/2023</td>
-                                                            <td>John Doe</td>
-                                                            <td>Consulta médica</td>
-                                                            <td>$100.00</td>
-                                                            <td>Transferencia bancaria</td>
-                                                            <td> <button type="button" class="btn btn-primary">Ver recibo</button></td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>02/01/2023</td>
-                                                            <td>Jane Smith</td>
-                                                            <td>Análisis de sangre</td>
-                                                            <td>$50.00</td>
-                                                            <td>Transferencia bancaria</td>
-                                                            <td> <button type="button" class="btn btn-primary">Ver recibo</button></td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>03/01/2023</td>
-                                                            <td>Bob Johnson</td>
-                                                            <td>Tratamiento dental</td>
-                                                            <td>$200.00</td>
-                                                            <td>Transferencia bancaria</td>
-                                                            <td> <button type="button" class="btn btn-primary">Ver recibo</button></td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>04/01/2023</td>
-                                                            <td>Lucy Lee</td>
-                                                            <td>Rayos X</td>
-                                                            <td>$75.00</td>
-                                                            <td>Efectivo</td>
-                                                            <td> <button type="button" class="btn btn-primary">Ver recibo</button></td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>05/01/2023</td>
-                                                            <td>Adam Jones</td>
-                                                            <td>Consulta médica</td>
-                                                            <td>$120.00</td>
-                                                            <td>Transferencia bancaria</td>
-                                                            <td> <button type="button" class="btn btn-primary">Ver recibo</button></td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>06/01/2023</td>
-                                                            <td>Samantha Kim</td>
-                                                            <td>Limpieza dental</td>
-                                                            <td>$80.00</td>
-                                                            <td>Cheque bancario</td>
-                                                            <td> <button type="button" class="btn btn-primary">Ver recibo</button></td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>07/01/2023</td>
-                                                            <td>William Davis</td>
-                                                            <td>Extracción de muelas</td>
-                                                            <td>$350.00</td>
-                                                            <td>Efectivo</td>
-                                                            <td> <button type="button" class="btn btn-primary">Ver recibo</button></td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>07/01/2023</td>
-                                                            <td>William Davis</td>
-                                                            <td>Extracción de muelas</td>
-                                                            <td>$350.00</td>
-                                                            <td>Efectivo</td>
-                                                            <td> <button type="button" class="btn btn-primary">Ver recibo</button></td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>07/01/2023</td>
-                                                            <td>William Davis</td>
-                                                            <td>Extracción de muelas</td>
-                                                            <td>$350.00</td>
-                                                            <td>Efectivo</td>
-                                                            <td> <button type="button" class="btn btn-primary">Ver recibo</button></td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>07/01/2023</td>
-                                                            <td>William Davis</td>
-                                                            <td>Extracción de muelas</td>
-                                                            <td>$350.00</td>
-                                                            <td>Efectivo</td>
-                                                            <td> <button type="button" class="btn btn-primary">Ver recibo</button></td>
-                                                        </tr>
-
-                                                        <!-- Aquí puedes agregar más filas con los ingresos de la clínica -->
-                                                    </tbody>
-                                                </table>
-                                            </div>
-                                        </div>
-                                        <br>
-                                    </div>
-
-                                </div>
-                            </div><!-- End Top Selling -->
+                    <div style="background-color: #fff;margin-top: 1rem;margin-bottom: 2rem;margin-left: 2rem;height: fit-content" class="container col-5">
+                        <div class="row" >
+                            <div >
+                                <h1 style="color: black;text-align: center;">Informe Médico</h1>
+                                <hr>
+                                <p style="font-size: 1.2rem;line-height: 1.5;margin-left: 20px;"><strong>Paciente:</strong> Juan Pérez García</p>
+                                <p style="font-size: 1.2rem;line-height: 1.5;margin-left: 20px;"><strong>DNI:</strong> 78524691</p>
+                                <p style="font-size: 1.2rem;line-height: 1.5;margin-left: 20px;"><strong>Edad:</strong> 45 años</p>
+                                <p style="font-size: 1.2rem;line-height: 1.5;margin-left: 20px;"><strong>Fecha:</strong> 11 de Abril de 2023</p>
+                                <hr style="border-top: 3px solid #ccc">
+                                <h2 style="color: black;text-align: center;" >Diagnóstico</h2>
+                                <p style="font-size: 1.2rem;line-height: 1.5;padding: 20px;">El paciente presenta una fractura de la tibia en la pierna derecha como resultado de un accidente de tráfico. Se observa una inflamación moderada en la zona afectada.</p>
+                                <h2 style="color: black;text-align: center;">Tratamiento Recomendado</h2>
+                                <p style="font-size: 1.2rem;line-height: 1.5;margin-left: 20px">Se recomienda inmovilizar la pierna afectada mediante una férula para permitir la cicatrización de la fractura. Se prescriben medicamentos para reducir la inflamación y el dolor, y se indica al paciente que mantenga la pierna elevada para ayudar a reducir la hinchazón.</p>
+                            </div>
 
                         </div>
-                    </div><!-- End Left side columns -->
+                    </div>
 
-                    <!-- Right side columns -->
 
+                    <div style="background-color: #fff;margin-top: 1rem;margin-bottom: 2rem;margin-left: -3rem" class="container col-6">
+                        <div class="row">
+                            <div >
+                                <h1 style="color: black;text-align: center;">Reunión Virtual</h1>
+                                <hr>
+                                <img src="assets/img/zoom.jpg" style="width: 600px">
+                                <div style="margin-top: 5px;text-align: center">
+                                    <button type="button" class="btn btn-success">Iniciar Cuestionario</button>
+                                    <button type="button" class="btn btn-secondary">Resultados de cuestionario</button>
+                                </div>
+
+                                <div style="text-align: center">
+                                    <button type="button" style="margin-top: 5px" class="btn btn-danger">Finalizar llamada</button>
+                                </div>
+                                <hr style="border-top: 3px solid #ccc">
+                                <div style="background-color: #fff;margin-top: 1rem;margin-bottom: 2rem" class="container card">
+
+                                    <h1 style="color: black;text-align: center;">Bitácora Personal</h1>
+                                    <p style="font-size: 1.2rem;line-height: 1.5;margin-left: 40px;margin-right: 40px">
+
+                                        مرحبا ميسي بايرن لكرة القدم ، مرحبا ميسي بايرن لكرة القدم ، مرحبا ميسي بايرن
+                                        لكرة القدم ، مرحبا ميسي بايرن لكرة القدم ، مرحبا ميسي بايرن لكرة القدم ، مرحبا ميسي بايرن
+                                        لكرة القدم ، مرحبا ميسي بايرن لكرة
+                                        القدم ، مرحبا ميسي بايرن لكرة القدم ، مرحبا ميسي بايرن لكرة القدم ، مرحبا ميسي بايرن لكرة القدم
+                                        ، مرحبا ميسي بايرن لكرة القدم ، مرحبا ميسي بايرن لكرة القدم ميسي بايرن لكرة القدم
+                                        مرحبا ميسي بايرن لكرة القدم ، مرحبا ميسي بايرن لكرة القدم ، مرحبا ميسي بايرن
+                                        مرحبا ميسي بايرن لكرة القدم ، مرحبا ميسي بايرن لكرة القدم ، مرحبا ميسي بايرن
+                                        مرحبا ميسي بايرن لكرة القدم ، مرحبا ميسي بايرن لكرة القدم ، مرحبا ميسي بايرن
+                                        مرحبا ميسي بايرن لكرة القدم ، مرحبا ميسي بايرن لكرة القدم ، مرحبا ميسي بايرن
+                                        مرحبا ميسي بايرن لكرة القدم ، مرحبا ميسي بايرن لكرة القدم ، مرحبا ميسي بايرن
+                                        مرحبا ميسي بايرن لكرة القدم ، مرحبا ميسي بايرن لكرة القدم ، مرحبا ميسي بايرن
+                                        مرحبا ميسي بايرن لكرة القدم ، مرحبا ميسي بايرن لكرة القدم ، مرحبا ميسي بايرن
+
+                                    </p>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
 
 
                 </div>
-            </section>
 
+
+
+
+            </section>
 
         </main><!-- End #main -->
 
@@ -484,8 +413,6 @@
         <script src="assets/vendor/simple-datatables/simple-datatables.js"></script>
         <script src="assets/vendor/tinymce/tinymce.min.js"></script>
         <script src="assets/vendor/php-email-form/validate.js"></script>
-        <!-- Agregamos las librerías de jQuery y Bootstrap 5 -->
-
 
         <!-- Template Main JS File -->
         <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>

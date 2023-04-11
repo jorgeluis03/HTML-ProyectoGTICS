@@ -45,7 +45,7 @@ h6 {
 --------------------------------------------------------------*/
 #main {
     margin-top: 60px;
-    padding: 20px 20px;
+
     transition: all 0.3s;
     width: auto;
 
@@ -668,7 +668,8 @@ table a:hover {
 
     .toggle-sidebar #main,
     .toggle-sidebar #footer {
-        margin-left: 100px;
+        margin-left: 10px;
+        margin-right: 0px;
     }
 
     .toggle-sidebar .sidebar {
@@ -790,7 +791,7 @@ table a:hover {
 
 .dashboard .filter .icon {
     color: #aab7cf;
-    padding-right: 20px;
+    padding-right: 10px;
     padding-bottom: 5px;
     transition: 0.3s;
     font-size: 16px;
