@@ -1679,7 +1679,6 @@ p{
     color: black;
     font-weight: 600;
     background-color:#e6e6e6;
-    transition: all 0.3s;
 }
 
 .botonCompletado:hover{
@@ -1690,4 +1689,63 @@ p{
 
 .seccionCuestionario{
     margin-top: 30px;
+}
+
+/* Perfil Doctor */
+
+.perfilDoctorFoto{
+    width: 60%;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    margin-right: 10px;
+}
+
+.perfilDoctorEspecialidad{
+    font-size: 1.7rem;
+    font-weight: 600;
+    color: rgb(27, 27, 27);
+}
+
+.perfilDoctorNombre{
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #012970;
+    margin-bottom: 20px;
+}
+
+.perfilDoctorInformacion{
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+
+.tablaDisponibilidad{
+    width: 75%; 
+    margin-left: auto; 
+    margin-right: auto; 
+    text-align: center;
+}
+
+.tablaDisponibilidad th{
+    padding: 0;
+}
+
+.tablaDisponibilidad td{
+    padding: 14px;
+}
+
+.botonReservarCitaHorario{
+    border-radius: 20px;
+    padding: 10px 20px;
+    color: white;
+    font-weight: 600;
+    background-color:#45b5e2;
+    transition: all 0.3s;
+    cursor: pointer;   
+}
+
+.botonReservarCitaHorario:hover{
+    color: white;
+    background-color:#197ce6;
 }
