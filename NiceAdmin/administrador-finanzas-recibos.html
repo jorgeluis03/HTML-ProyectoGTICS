@@ -29,6 +29,8 @@
   <!-- Template Main CSS File -->
   <!--<link href="assets/css/style.css" rel="stylesheet"> -->
   <link href="assets/css/styleadministrador.css" rel="stylesheet">
+ 
+  <link rel="stylesheet" href="assets/css/stylePaciente.css">
 
   <!-- =======================================================
   * Template Name: NiceAdmin
@@ -289,6 +291,8 @@
   </aside><!-- End Sidebar-->
 
   <main id="main" class="main">
+  
+  
 
     <div class="d-flex justify-content-between align-items-center">
 		<div class="pagetitle">
@@ -300,297 +304,77 @@
 	  				  
 	</div>
 
-    <section class="section dashboard">
+    <section  class="section dashboard">
       <div class="row">
 
         <!-- Left side columns -->
-        <div class="col-lg-10 container">
+        <div class="col-lg-12 container">
           <div class="row">
 
-			<div class="col-12">
-              <div class="card top-selling overflow-auto container">
-				  <div class="info-card revenue-card">
-					
-
-					
-					  <h5 class="card-title">Gráfico de ingresos mensuales <span>| Sede San Isidro</span></h5>
-
-					  <div class="d-flex align-items-center">
-						<div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
-						  <i class="bi bi-currency-dollar"></i>
-						</div>
-						<div class="ps-3">
-						  <h6>$124,264</h6>
-						  <h4><span class="text-success small pt-1 fw-bold">8%</span> <span class="text-muted small pt-2 ps-1">incrementó</span></h4>
-
-						</div>
-					  </div>
-					<div id="lineChart"></div>
-
-					  <script>
-						document.addEventListener("DOMContentLoaded", () => {
-						  new ApexCharts(document.querySelector("#lineChart"), {
-							series: [{
-							  name: "Ingresos Totales",
-							  data: [124000.31, 141798.32, 241563.25, 151563.24, 189258.36, 162254.25, 219563.23, 191178.89, 148587.26, 169563.23, 191178.89, 148587.26]
-							}],
-							chart: {
-							  height: 350,
-							  type: 'line',
-							  zoom: {
-								enabled: false
-							  }
-							},
-							dataLabels: {
-							  enabled: false
-							},
-							stroke: {
-							  curve: 'straight'
-							},
-							grid: {
-							  row: {
-								colors: ['#f3f3f3', 'transparent'], // takes an array which will be repeated on columns
-								opacity: 0.5
-							  },
-							},
-							xaxis: {
-							  categories: ['Ene', 'Feb', 'Mar', 'Abr', 'May', 'Jun', 'Jul', 'Agost', 'Sep','Oct','Nov','Dic'],
-							}
-						  }).render();
-						});
-					  </script>
-              <!-- End Line Chart -->
-					
-					
-					
-					</div>
-
-				  <!-- Area Chart -->
-			
-
-              </div>
-            </div><!-- End Top Selling -->
-
             <!-- Top Selling -->
-            <div class="col-12">
-              <div class="card top-selling overflow-auto container">
-
-                
-
-                <div class="card-body pb-0">
-					<div class="d-flex justify-content-between align-items-center">
-					  <h5 class="card-title">INGRESOS <span>| Sede San Isidro</span></h5>
-					  <div>
-					  <a class="btn btn-danger" href="#">
-						<i class="bi bi-file-earmark-pdf"></i>
-					  </a>
-					  <a class="btn btn-success" href="#">
-						<i class="bi bi-file-earmark-excel"></i>
-					  </a>
-					  <a class="btn btn-primary" href="#">
-						<i class="bi bi-file-earmark-text"></i>
-					  </a>
-					</div>
-					 </div>
-					
-
-				  <div class="container-fluid">
-					<form class="d-flex" role="search">
-					  <input class="form-control me-2" type="search" placeholder="Buscar por Fecha" aria-label="Search">
-					  
-					</form>
-				  </div>
-				  <br>
-
-                  <div class="d-flex flex-column" style="height: 300px; overflow: auto;">
-					<div class="table-responsive">
-					  <table class="table ">
-						<thead>
-						  <tr>
-							<th>Fecha</th>
-							<th>Paciente</th>
-							<th>Concepto</th>
-							<th>Monto</th>
-							<th>Forma de Pago</th>
-							<th></th>
-						  </tr>
-						</thead>
-						<tbody>
-						  <tr>
-							<td>01/01/2023</td>
-							<td>John Doe</td>
-							<td>Consulta médica</td>
-							<td>$100.00</td>
-							<td>Efectivo</td>
-							<th><a class="btn btn-outline-secondary rounded-pill text-decoration-none" href="administrador-finanzas-recibos.html" target="_blank">Ver recibo</a></th>
-						  </tr>
-						  <tr>
-							<td>02/01/2023</td>
-							<td>Jane Smith</td>
-							<td>Análisis de sangre</td>
-							<td>$50.00</td>
-							<td>Tarjeta de crédito</td>
-							<th><a class="btn btn-outline-secondary rounded-pill text-decoration-none" href="administrador-finanzas-recibos.html" target="_blank">Ver recibo</a></th>
-
-						  </tr>
-						  <tr>
-							<td>03/01/2023</td>
-							<td>Bob Johnson</td>
-							<td>Tratamiento dental</td>
-							<td>$200.00</td>
-							<td>Transferencia bancaria</td>
-							<th><a class="btn btn-outline-secondary rounded-pill text-decoration-none" href="administrador-finanzas-recibos.html" target="_blank">Ver recibo</a></th>
-
-						  </tr>
-						  <tr>
-							<td>04/01/2023</td>
-							<td>Lucy Lee</td>
-							<td>Rayos X</td>
-							<td>$75.00</td>
-							<td>Efectivo</td>
-							<th><a class="btn btn-outline-secondary rounded-pill text-decoration-none" href="administrador-finanzas-recibos.html" target="_blank">Ver recibo</a></th>
-
-						  </tr>
-						  <tr>
-							<td>05/01/2023</td>
-							<td>Adam Jones</td>
-							<td>Consulta médica</td>
-							<td>$120.00</td>
-							<td>Tarjeta de débito</td>
-							<th><a class="btn btn-outline-secondary rounded-pill text-decoration-none" href="administrador-finanzas-recibos.html" target="_blank">Ver recibo</a></th>
-
-						  </tr>
-						  <tr>
-							<td>06/01/2023</td>
-							<td>Samantha Kim</td>
-							<td>Limpieza dental</td>
-							<td>$80.00</td>
-							<td>Transferencia bancaria</td>
-							<th><a class="btn btn-outline-secondary rounded-pill text-decoration-none" href="administrador-finanzas-recibos.html" target="_blank">Ver recibo</a></th>
-
-						  </tr>
-						  <tr>
-							<td>07/01/2023</td>
-							<td>William Davis</td>
-							<td>Extracción de muelas</td>
-							<td>$350.00</td>
-							<td>Efectivo</td>
-							<th><a class="btn btn-outline-secondary rounded-pill text-decoration-none" href="administrador-finanzas-recibos.html" target="_blank">Ver recibo</a></th>
-
-						  </tr>
-						  
-						  <!-- Aquí puedes agregar más filas con los ingresos de la clínica -->
-						</tbody>
-					  </table>
-					 </div>
-				  </div>
-					<br>
-                </div>
-
-              </div>
-            </div><!-- End Top Selling -->
+            
 			
 			
 			<div class="col-12">
-				<div class="card top-selling overflow-auto container">
-				<div class="card-body pb-0">
-					<div class="d-flex justify-content-between align-items-center">
-					  <h5 class="card-title">EGRESOS <span>| Sede San Isidro</span></h5>
-					  <div>
-					  <a class="btn btn-danger" href="#">
-						<i class="bi bi-file-earmark-pdf"></i>
-					  </a>
-					  <a class="btn btn-success" href="#">
-						<i class="bi bi-file-earmark-excel"></i>
-					  </a>
-					  <a class="btn btn-primary" href="#">
-						<i class="bi bi-file-earmark-text"></i>
-					  </a>
-					</div>
-					 </div>
-				  <div class="container-fluid">
-					<form class="d-flex" role="search">
-					  <input class="form-control me-2" type="search" placeholder="Buscar por Fecha" aria-label="Search">
+				<div class="card top-selling" id="recibo">
+					<div class="card-body pb-0">
+						<div class="d-flex justify-content-between align-items-center">
+						 <h5 class="card-title">Recibo - 13/12/2022 <span>| Pago a suministros</span></h5>	 
+						  <a type="button"class="btn btn-secondary rounded-pill" href="administrador-crearPaciente.html">Imprimir <i class="bi bi-printer-fill"></i></a>
+						 </div>
+				 
+						<br>
+						<div class="informacionClinica">
+                <p>
+                    <h2>Clínica INTERPUC</h2>
+                    
+                    <h6>Dirección Imaginaria</h6>
+                    
+                    <h6>Lima, Perú</h6>
+                    
+                    <h6>www.interpucp.com.pe</h6>
+                </p>
+            </div>
+			<div class="row ">
+                <div class="col-6">
+                    <p><span class="fw-bold">Paciente:</span> Juanchito Palacios Castro</p>
+
+                    <p><span class="fw-bold">Seguro:</span >Pacífico EPS</p>
+                    <p><span class="fw-bold">Estado:</span>Cancelado</p>
+                </div>
+                <div class="col-6">
+                    <p><span class="fw-bold">Fecha emitida:   </span >13/12/2022</p>
+                    <p><span class="fw-bold">Fecha cancelada: </span>13/12/2022</p>
+                    <p><span class="fw-bold">Tipo de pago:    </span>Visa ***1234</p>
+                </div>
+            </div>
+
+            <section >
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Por concepto de</th>
+                            <th>Cantidad</th>
+                            <th>Precio</th>
+                            <th>Importe total</th>
+                            <th>Importe con seguro</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Lorem ipsum dol amet consectetur</td>
+                            <td>1</td>
+                            <td>S/ 1300.00</td>
+                            <td>S/ 1300.00</td>
+                            <td>S/ 130.00</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </section>
 					  
-					</form>
-				  </div>
-			  <br>
-			  <div class="d-flex flex-column" style="height: 300px; overflow: auto;">
-				<div class="table-responsive">
-				  <table class="table table-striped table-hover">
-					<thead>
-					  <tr>
-						<th>Fecha</th>
-						<th>Concepto</th>
-						<th>Monto</th>
-						<th>Forma de Pago</th>
-						<th>Proveedor</th>
-						<th>Categoría de Gasto</th>
-						<th>Descripción</th>
-					  </tr>
-					</thead>
-					<tbody>
-					  <tr>
-						<td>01/01/2023</td>
-						<td>Pago de renta de local</td>
-						<td>$1,000.00</td>
-						<td>Transferencia bancaria</td>
-						<td>Propietario del local</td>
-						<td>Gastos Generales</td>
-						<td>Pago de la renta del mes de enero</td>
-					  </tr>
-					  <tr>
-						<td>05/01/2023</td>
-						<td>Compra de suministros médicos</td>
-						<td>$500.00</td>
-						<td>Tarjeta de crédito</td>
-						<td>Proveedor de suministros</td>
-						<td>Gastos de Suministros</td>
-						<td>Compra de suministros médicos para el mes de enero</td>
-					  </tr>
-					  <tr>
-						<td>10/01/2023</td>
-						<td>Pago de servicios de limpieza</td>
-						<td>$150.00</td>
-						<td>Efectivo</td>
-						<td>Compañía de limpieza</td>
-						<td>Gastos de Limpieza</td>
-						<td>Pago de servicios de limpieza para el mes de enero</td>
-					  </tr>
-					  <tr>
-						<td>01/01/2023</td>
-						<td>Pago de renta de local</td>
-						<td>$1,000.00</td>
-						<td>Transferencia bancaria</td>
-						<td>Propietario del local</td>
-						<td>Gastos Generales</td>
-						<td>Pago de la renta del mes de enero</td>
-					  </tr>
-					  <tr>
-						<td>05/01/2023</td>
-						<td>Compra de suministros médicos</td>
-						<td>$500.00</td>
-						<td>Tarjeta de crédito</td>
-						<td>Proveedor de suministros</td>
-						<td>Gastos de Suministros</td>
-						<td>Compra de suministros médicos para el mes de enero</td>
-					  </tr>
-					  <tr>
-						<td>10/01/2023</td>
-						<td>Pago de servicios de limpieza</td>
-						<td>$150.00</td>
-						<td>Efectivo</td>
-						<td>Compañía de limpieza</td>
-						<td>Gastos de Limpieza</td>
-						<td>Pago de servicios de limpieza para el mes de enero</td>
-					  </tr>
-					  <!-- Puedes agregar más filas con información sobre los egresos de la clínica -->
-					</tbody>
-				  </table>
+						
 					</div>
-				  </div>
-				  <br>
-				</div>
 				</div>
 			</div>
 			
@@ -610,7 +394,22 @@
 
   <!-- ======= Footer ======= -->
   <footer id="footer" class="footer">
-    
+    <div class="container">
+                    <div class="row">
+                        <div class="d-flex align-items-center col-md-10">
+                            <img style="height: 30px; margin-left: 30px" src="assets/img/logo.png" alt="Logo de la clínica">
+                            <span class="fw-bold d-none d-lg-block">Clínica INTERPUCP</span>
+                        </div>
+                        <div class="d-flex align-items-center col-md-auto">
+                            <div class="col-md-3">
+                                <i class="bi bi-telephone-fill"></i>
+                            </div>
+                            <div class="col-md-auto justify-content-end">
+                                <span class="fw-bold d-none d-lg-block">987-154-200</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
     <div class="credits">
       <!-- All the links in the footer should remain intact. -->
       <!-- You can delete the links only if you purchased the pro version. -->
