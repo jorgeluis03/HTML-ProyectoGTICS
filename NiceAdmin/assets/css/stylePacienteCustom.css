@@ -1398,6 +1398,22 @@ p{
     box-shadow: none;
 }
 
+.botonPagar{
+    padding: 10px 30px;
+    font-weight: 700;
+    color: black;
+    background-color: #ffe26f;
+    border-radius: 20px;
+    border: none;
+    transition: all 0.3s;
+}
+
+.botonPagar:hover{
+    cursor: pointer;
+    color: black;
+    background-color: #ffd52b;
+}
+
 .seccionPrincipal.recibo{
     font-family: 'Schibsted Grotesk';
 }
