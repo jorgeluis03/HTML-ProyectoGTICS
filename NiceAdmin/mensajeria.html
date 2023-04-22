@@ -1,11 +1,11 @@
-  <!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Calendario - Administrador</title>
+  <title>Mensajería - Administrador</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -25,15 +25,16 @@
   <link href="assets/vendor/quill/quill.bubble.css" rel="stylesheet">
   <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
   <link href="assets/vendor/simple-datatables/style.css" rel="stylesheet">
-
+	
   <!-- Template Main CSS File -->
   <!--<link href="assets/css/style.css" rel="stylesheet"> -->
   <link href="assets/css/styleadministrador.css" rel="stylesheet">
-  <link href="assets/css/styleadministrador.css" rel="stylesheet">
-  
-  
-</head>
-
+	
+	
+	 <!--Links para mensajeria-->
+    
+    <!--End link mensajeria-->
+	
   <!-- =======================================================
   * Template Name: NiceAdmin
   * Updated: Mar 09 2023 with Bootstrap v5.2.3
@@ -163,7 +164,7 @@
                 <img src="assets/img/messages-1.jpg" alt="" class="rounded-circle">
                 <div>
                   <h4>Maria Hudson</h4>
-                  <p>Velit asperiores et ducimus soluta repudiandae labore officia est ut...</p>
+                  <p>Estimado administrador, quisiera solicitar su autorización para realizar una cirugía ...</p>
                   <p>4 hrs. ago</p>
                 </div>
               </a>
@@ -177,7 +178,7 @@
                 <img src="assets/img/messages-2.jpg" alt="" class="rounded-circle">
                 <div>
                   <h4>Anna Nelson</h4>
-                  <p>Velit asperiores et ducimus soluta repudiandae labore officia est ut...</p>
+                  <p>Hola, quisiera informarle que hay un problema en la plataforma que está impidiendo ...</p>
                   <p>6 hrs. ago</p>
                 </div>
               </a>
@@ -276,147 +277,205 @@
         </a>
       </li><!-- End Dashboard Nav -->
 	  <li class="nav-item">
-        <a class="nav-link collapsed " href="administrador-finanzas.html">
+        <a class="nav-link collapsed" href="administrador-finanzas.html">
           <i class="bi bi-bar-chart"></i>
           <span>Finanzas</span>
         </a>
       </li><!-- End Profile Page Nav -->
 	  <li class="nav-item">
-        <a class="nav-link " href="administrador-calendario.html">
+        <a class="nav-link collapsed" href="administrador-calendario.html">
           <i class="bi bi-card-list"></i>
           <span>Calendario General</span>
         </a>
       </li><!-- End Profile Page Nav -->
-		<a class="nav-link collapsed" href="administrador-mensajeria.html">
-		  <i class="bi bi-wechat"></i>
-		  <span>Mensajería</span>
-		</a>
-	  </li>
+	  <li class="nav-item">
+        <a class="nav-link " href="administrador-mensajeria.html">
+          <i class="bi bi-wechat"></i>
+          <span>Mensajería</span>
+        </a>
+      </li>
+
     </ul>
 
   </aside><!-- End Sidebar-->
 
-  <main id="main" class="main">
+  <main id="main" class="main ">
 
-    
+    <section  >
+		<div class="row d-flex justify-content ">
+		<div  class = "bg-white col-md-4 col-sm-2 p-6 ">
+			<h3 class=" m-3">Tus chats</h3>
+			
+			<div class = "scrollable1 px-3"  >
+				<div class=" d-flex  justify-content p-3 mb-2 rounded border" style="background-color: #F2F2F2" >
+					<img src="assets/img/p2.jpg" width="70" height="70" class = "rounded-circle me-2"/>
+					<div class="overflow-hidden">
+						<div class = "d-flex justify-content-between mb-0">
+							<span class="fw-bold">Diego Juan Velazquez Torres</span>
+							<small>09:55 am</small>
+						</div>	
+						<small class ="ellipsis"> Ten en cuenta que para que la propiedad 'overflow-ellipsis' funcione correctamente, el contenedor que contiene el texto debe tener una anchura fija o estar limitado por otro elemento. De lo contrario, el texto no se cortará y se mostrará completo, ignorando la propiedad 'overflow-ellipsis'.</small>
+					</div>
+				</div>
+				<div class=" d-flex  justify-content p-3 mb-2 rounded border" style="background-color: #F2F2F2" >
+					<img src="assets/img/p2.jpg" width="70" height="70" class = "rounded-circle me-2"/>
+					<div class="overflow-hidden">
+						<div class = "d-flex justify-content-between mb-0">
+							<span class="fw-bold">Diego Juan Velazquez Torres</span>
+							<small>09:55 am</small>
+						</div>	
+						<small class ="ellipsis"> Ten en cuenta que para que la propiedad 'overflow-ellipsis' funcione correctamente, el contenedor que contiene el texto debe tener una anchura fija o estar limitado por otro elemento. De lo contrario, el texto no se cortará y se mostrará completo, ignorando la propiedad 'overflow-ellipsis'.</small>
+					</div>
+				</div>
+				<div class=" d-flex  justify-content p-3 mb-2 rounded border" style="background-color: #F2F2F2" >
+					<img src="assets/img/p2.jpg" width="70" height="70" class = "rounded-circle me-2"/>
+					<div class="overflow-hidden">
+						<div class = "d-flex justify-content-between mb-0">
+							<span class="fw-bold">Diego Juan Velazquez Torres</span>
+							<small>09:55 am</small>
+						</div>	
+						<small class ="ellipsis"> Ten en cuenta que para que la propiedad 'overflow-ellipsis' funcione correctamente, el contenedor que contiene el texto debe tener una anchura fija o estar limitado por otro elemento. De lo contrario, el texto no se cortará y se mostrará completo, ignorando la propiedad 'overflow-ellipsis'.</small>
+					</div>
+				</div>
+				<div class=" d-flex  justify-content p-3 mb-2 rounded border" style="background-color: #F2F2F2" >
+					<img src="assets/img/p2.jpg" width="70" height="70" class = "rounded-circle me-2"/>
+					<div class="overflow-hidden">
+						<div class = "d-flex justify-content-between mb-0">
+							<span class="fw-bold">Diego Juan Velazquez Torres</span>
+							<small>09:55 am</small>
+						</div>	
+						<small class ="ellipsis"> Ten en cuenta que para que la propiedad 'overflow-ellipsis' funcione correctamente, el contenedor que contiene el texto debe tener una anchura fija o estar limitado por otro elemento. De lo contrario, el texto no se cortará y se mostrará completo, ignorando la propiedad 'overflow-ellipsis'.</small>
+					</div>
+				</div>
+				<div class=" d-flex  justify-content p-3 mb-2 rounded border" style="background-color: #F2F2F2" >
+					<img src="assets/img/p2.jpg" width="70" height="70" class = "rounded-circle me-2"/>
+					<div class="overflow-hidden">
+						<div class = "d-flex justify-content-between mb-0">
+							<span class="fw-bold">Diego Juan Velazquez Torres</span>
+							<small>09:55 am</small>
+						</div>	
+						<small class ="ellipsis"> Ten en cuenta que para que la propiedad 'overflow-ellipsis' funcione correctamente, el contenedor que contiene el texto debe tener una anchura fija o estar limitado por otro elemento. De lo contrario, el texto no se cortará y se mostrará completo, ignorando la propiedad 'overflow-ellipsis'.</small>
+					</div>
+				</div>
+				<div class=" d-flex  justify-content p-3 mb-2 rounded border" style="background-color: #F2F2F2" >
+					<img src="assets/img/p2.jpg" width="70" height="70" class = "rounded-circle me-2"/>
+					<div class="overflow-hidden">
+						<div class = "d-flex justify-content-between mb-0">
+							<span class="fw-bold">Diego Juan Velazquez Torres</span>
+							<small>09:55 am</small>
+						</div>	
+						<small class ="ellipsis"> Ten en cuenta que para que la propiedad 'overflow-ellipsis' funcione correctamente, el contenedor que contiene el texto debe tener una anchura fija o estar limitado por otro elemento. De lo contrario, el texto no se cortará y se mostrará completo, ignorando la propiedad 'overflow-ellipsis'.</small>
+					</div>
+				</div>
+				<div class=" d-flex  justify-content p-3 mb-2 rounded border" style="background-color: #F2F2F2" >
+					<img src="assets/img/p2.jpg" width="70" height="70" class = "rounded-circle me-2"/>
+					<div class="overflow-hidden">
+						<div class = "d-flex justify-content-between mb-0">
+							<span class="fw-bold">Diego Juan Velazquez Torres</span>
+							<small>09:55 am</small>
+						</div>	
+						<small class ="ellipsis"> Ten en cuenta que para que la propiedad 'overflow-ellipsis' funcione correctamente, el contenedor que contiene el texto debe tener una anchura fija o estar limitado por otro elemento. De lo contrario, el texto no se cortará y se mostrará completo, ignorando la propiedad 'overflow-ellipsis'.</small>
+					</div>
+				</div>
+				<div class=" d-flex  justify-content p-3 mb-2 rounded border" style="background-color: #F2F2F2" >
+					<img src="assets/img/p2.jpg" width="70" height="70" class = "rounded-circle me-2"/>
+					<div class="overflow-hidden">
+						<div class = "d-flex justify-content-between mb-0">
+							<span class="fw-bold">Diego Juan Velazquez Torres</span>
+							<small>09:55 am</small>
+						</div>	
+						<small class ="ellipsis"> Ten en cuenta que para que la propiedad 'overflow-ellipsis' funcione correctamente, el contenedor que contiene el texto debe tener una anchura fija o estar limitado por otro elemento. De lo contrario, el texto no se cortará y se mostrará completo, ignorando la propiedad 'overflow-ellipsis'.</small>
+					</div>
+				</div>
+			</div>
+			<br>
+			
+		</div>
+		<div class = "col-md-8 col-sm-10" style="background-color: #F2F2F2" >
+			<div class=" d-flex  justify-content p-4 px-5 mb-2  border-bottom"  >
+					<img src="assets/img/p2.jpg" width="70" height="70" class = "rounded-circle me-3"/>
+					<div class="overflow-hidden">
+						<div class = "d-flex justify-content-between mb-0">
+							<span class="fw-bold">Diego Juan Velazquez Torres</span>
+						</div>	
+						<p>En línea</p>
+					</div>
+			</div>
+			<div class = "scrollable2 px-5"  >
+				<div class="d-flex mb-4">
+					
+					<img src="assets/img/p2.jpg" width="70" height="70" class=" rounded-circle align-self-end"/>
+					<div class = "flex flex-col col-lg-6 col-md-9 col-sm-11 ">
+						<div class="bg-white p-2 ms-2 rounded">
+							<p class="mb-1 fw-bold">Diego Velazquez</p>
+							<small class=" ">
+								El mundo es un lugar maravilloso pero lamentablemente conocemos muy poco sobre él. Al menos, mucho menos de lo que podríamos.
+							</small>
+						</div>
+						<div>
+							<small class=" ms-2">09:55 am</small>
+						</div>
+					</div>
+				</div>
+				<div class="d-flex flex-row-reverse mb-4">
+					
+					<img src="assets/img/p2.jpg" width="70" height="70" class=" rounded-circle align-self-end"/>
+					<div class = "flex flex-col col-lg-6 col-md-9 col-sm-11">
+						<div class="text-white p-2 me-2 rounded " style="background-color: #5882FA">
+							<p class="mb-1 fw-bold">Alexandra Manrique</p>
+							<small class=" ">
+								El mundo es un lugar maravilloso pero lamentablemente conocemos muy poco sobre él. Al menos, mucho menos de lo que podríamos.
+							</small>
+						</div>
+						<div class ="text-end">
+							<small class="ms-2">09:55 am</small>
+						</div>
+					</div>
+				</div>
+				<div class="d-flex mb-4">
+					
+					<img src="assets/img/p2.jpg" width="70" height="70" class=" rounded-circle align-self-end"/>
+					<div class = "flex flex-col col-lg-6 col-md-9 col-sm-11 ">
+						<div class="bg-white p-2 ms-2 rounded">
+							<p class="mb-1 fw-bold">Diego Velazquez</p>
+							<small class=" ">
+								El mundo es un lugar maravilloso pero lamentablemente conocemos muy poco sobre él. Al menos, mucho menos de lo que podríamos.
+							</small>
+						</div>
+						<div>
+							<small class=" ms-2">09:55 am</small>
+						</div>
+					</div>
+				</div>
+				<div class="d-flex flex-row-reverse mb-4">
+					
+					<img src="assets/img/p2.jpg" width="70" height="70" class=" rounded-circle align-self-end"/>
+					<div class = "flex flex-col col-lg-6 col-md-9 col-sm-11">
+						<div class="text-white p-2 me-2 rounded " style="background-color: #5882FA">
+							<p class="mb-1 fw-bold">Alexandra Manrique</p>
+							<small class=" ">
+								El mundo es un lugar maravilloso pero lamentablemente conocemos muy poco sobre él. Al menos, mucho menos de lo que podríamos.
+							</small>
+						</div>
+						<div class ="text-end">
+							<small class="ms-2">09:55 am</small>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="p-3  d-flex align-items-center">
+			  <input type="text" class="form-control me-2  border-0" placeholder="Escribe tu mensaje...">
+			  <button type="button" class="btn btn-primary">Enviar</button>
+			</div>
 
-    <section class="section dashboard">
-      <div class="row bg-white p-3" >
-		<script>
-
-  document.addEventListener('DOMContentLoaded', function() {
-    var calendarEl = document.getElementById('calendar');
-
-    var calendar = new FullCalendar.Calendar(calendarEl, {
-      headerToolbar: {
-        left: 'prev,next today',
-        center: 'title',
-        right: 'dayGridMonth,timeGridWeek,timeGridDay'
-      },
-      initialDate: '2023-01-12',
-      navLinks: true, // can click day/week names to navigate views
-      selectable: true,
-      selectMirror: true,
-      select: function(arg) {
-        var title = prompt('Event Title:');
-        if (title) {
-          calendar.addEvent({
-            title: title,
-            start: arg.start,
-            end: arg.end,
-            allDay: arg.allDay
-          })
-        }
-        calendar.unselect()
-      },
-      eventClick: function(arg) {
-        if (confirm('¿Estás seguro que deseas eliminar este evento?')) {
-          arg.event.remove()
-        }
-      },
-      editable: true,
-      dayMaxEvents: true, // allow "more" link when too many events
-      events: [
-        {
-          title: 'All Day Event',
-          start: '2023-01-01'
-        },
-        {
-          title: 'Long Event',
-          start: '2023-01-07',
-          end: '2023-01-10'
-        },
-        {
-          groupId: 999,
-          title: 'Repeating Event',
-          start: '2023-01-09T16:00:00'
-        },
-        {
-          groupId: 999,
-          title: 'Repeating Event',
-          start: '2023-01-16T16:00:00'
-        },
-        {
-          title: 'Conference',
-          start: '2023-01-11',
-          end: '2023-01-13'
-        },
-        {
-          title: 'Meeting',
-          start: '2023-01-12T10:30:00',
-          end: '2023-01-12T12:30:00'
-        },
-        {
-          title: 'Lunch',
-          start: '2023-01-12T12:00:00'
-        },
-        {
-          title: 'Meeting',
-          start: '2023-01-12T14:30:00'
-        },
-        {
-          title: 'Happy Hour',
-          start: '2023-01-12T17:30:00'
-        },
-        {
-          title: 'Dinner',
-          start: '2023-01-12T20:00:00'
-        },
-        {
-          title: 'Birthday Party',
-          start: '2023-01-13T07:00:00'
-        },
-        {
-          title: 'Click for Google',
-          url: 'http://google.com/',
-          start: '2023-01-28'
-        }
-      ]
-    });
-
-    calendar.render();
-  });
-
-</script>
-          <div id='calendar'></div>
-
-      </div>
-
-   </section>
-
+		</div>
+		</div>
+	</section>
+	
   </main><!-- End #main -->
 
   <!-- ======= Footer ======= -->
-  <footer id="footer" class="footer">
-    
-    <div class="credits">
-      <!-- All the links in the footer should remain intact. -->
-      <!-- You can delete the links only if you purchased the pro version. -->
-      <!-- Licensing information: https://bootstrapmade.com/license/ -->
-      <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/nice-admin-bootstrap-admin-html-template/ -->
-      
-    </div>
-  </footer><!-- End Footer -->
+
 
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
@@ -429,14 +488,12 @@
   <script src="assets/vendor/simple-datatables/simple-datatables.js"></script>
   <script src="assets/vendor/tinymce/tinymce.min.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
-  <!-- Agregamos las librerías de jQuery y Bootstrap 5 -->
-
 
   <!-- Template Main JS File -->
   <script src="assets/js/jsAdministrador.js"></script>
-  <script src="assets/js/index.js"></script>
-  <script src="assets/js/datatables.js"></script>
-  <script src="assets/js/moment.js"></script>
+  
+  
+	
 </body>
 
 </html>

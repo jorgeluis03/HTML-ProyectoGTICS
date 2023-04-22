@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Mensajería - Administrador</title>
+  <title>Finanzas - Administrador</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -25,20 +25,12 @@
   <link href="assets/vendor/quill/quill.bubble.css" rel="stylesheet">
   <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
   <link href="assets/vendor/simple-datatables/style.css" rel="stylesheet">
-
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
   <!-- Template Main CSS File -->
   <!--<link href="assets/css/style.css" rel="stylesheet"> -->
   <link href="assets/css/styleadministrador.css" rel="stylesheet">
-	<link href="assets/js/javascript.js" rel="stylesheet">
-	
-	<!--Links para mensajeria-->
-	<script src="https://cdn.tailwindcss.com"></script>
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap" rel="stylesheet">
-	
-	<!--End link mensajeria-->
-	
+	<link href="https://cdn.datatables.net/v/bs5/dt-1.13.4/datatables.min.css" rel="stylesheet"/>
+
   <!-- =======================================================
   * Template Name: NiceAdmin
   * Updated: Mar 09 2023 with Bootstrap v5.2.3
@@ -168,7 +160,7 @@
                 <img src="assets/img/messages-1.jpg" alt="" class="rounded-circle">
                 <div>
                   <h4>Maria Hudson</h4>
-                  <p>Estimado administrador, quisiera solicitar su autorización para realizar una cirugía ...</p>
+                  <p>Velit asperiores et ducimus soluta repudiandae labore officia est ut...</p>
                   <p>4 hrs. ago</p>
                 </div>
               </a>
@@ -182,7 +174,7 @@
                 <img src="assets/img/messages-2.jpg" alt="" class="rounded-circle">
                 <div>
                   <h4>Anna Nelson</h4>
-                  <p>Hola, quisiera informarle que hay un problema en la plataforma que está impidiendo ...</p>
+                  <p>Velit asperiores et ducimus soluta repudiandae labore officia est ut...</p>
                   <p>6 hrs. ago</p>
                 </div>
               </a>
@@ -268,9 +260,9 @@
     </nav><!-- End Icons Navigation -->
 
   </header><!-- End Header -->
-
+	<br>
   <!-- ======= Sidebar ======= -->
-  <aside id="sidebar" class="sidebar">
+  <aside id="sidebar" class="sidebar " >
 
     <ul class="sidebar-nav" id="sidebar-nav">
 
@@ -281,7 +273,7 @@
         </a>
       </li><!-- End Dashboard Nav -->
 	  <li class="nav-item">
-        <a class="nav-link collapsed" href="administrador-finanzas.html">
+        <a class="nav-link " href="administrador-finanzas.html">
           <i class="bi bi-bar-chart"></i>
           <span>Finanzas</span>
         </a>
@@ -292,187 +284,337 @@
           <span>Calendario General</span>
         </a>
       </li><!-- End Profile Page Nav -->
-	  <li class="nav-item">
-        <a class="nav-link " href="administrador-mensajeria.html">
-          <i class="bi bi-wechat"></i>
-          <span>Mensajería</span>
-        </a>
-      </li>
-
+		<a class="nav-link collapsed" href="administrador-mensajeria.html">
+		  <i class="bi bi-wechat"></i>
+		  <span>Mensajería</span>
+		</a>
+	  </li>
     </ul>
 
   </aside><!-- End Sidebar-->
 
-  <main id="main" class="main overflow-hidden">
+  <main id="main" class="main">
 
-    <section  >
-		<div class="row d-flex justify-content ">
-		<div  class = "bg-white col-md-4 col-sm-2 p-6 ">
-			<h3 class="text-2xl mb-3">Tus chats</h3>
-			
-			<div class = "scrollable1"  >
-				<div class=" flex bg-gray-100 rounded p-3 mb-2" >
-					<img src="assets/img/p2.jpg" class = "rounded-full w-12 mr-4"/>
-					<div class="w-full overflow-hidden">
-						<div class = "d-flex justify-content-between align-items-center">
-							<p class="fw-bold">Diego Juan Velazquez Torres</p>
-							<small>09:55 am</small>
-						</div>	
-						<small class ="ellipsis overflow-hidden white-space-nowrap block"> Ten en cuenta que para que la propiedad 'overflow-ellipsis' funcione correctamente, el contenedor que contiene el texto debe tener una anchura fija o estar limitado por otro elemento. De lo contrario, el texto no se cortará y se mostrará completo, ignorando la propiedad 'overflow-ellipsis'.</small>
-					</div>
-				</div>
-				<div class=" flex bg-gray-100 rounded p-3 mb-2" >
-					<img src="assets/img/p2.jpg" class = "rounded-full w-12 mr-4"/>
-					<div class="w-full overflow-hidden">
-						<div class = "d-flex justify-content-between align-items-center">
-							<p class="fw-bold">Diego Juan Velazquez Torres</p>
-							<small>09:55 am</small>
-						</div>	
-						<small class ="ellipsis overflow-hidden white-space-nowrap block"> Ten en cuenta que para que la propiedad 'overflow-ellipsis' funcione correctamente, el contenedor que contiene el texto debe tener una anchura fija o estar limitado por otro elemento. De lo contrario, el texto no se cortará y se mostrará completo, ignorando la propiedad 'overflow-ellipsis'.</small>
-					</div>
-				</div>
-				<div class=" flex bg-gray-100 rounded p-3 mb-2" >
-					<img src="assets/img/p2.jpg" class = "rounded-full w-12 mr-4"/>
-					<div class="w-full overflow-hidden">
-						<div class = "d-flex justify-content-between align-items-center">
-							<p class="fw-bold">Diego Juan Velazquez Torres</p>
-							<small>09:55 am</small>
-						</div>	
-						<small class ="ellipsis overflow-hidden white-space-nowrap block"> Ten en cuenta que para que la propiedad 'overflow-ellipsis' funcione correctamente, el contenedor que contiene el texto debe tener una anchura fija o estar limitado por otro elemento. De lo contrario, el texto no se cortará y se mostrará completo, ignorando la propiedad 'overflow-ellipsis'.</small>
-					</div>
-				</div>
-				<div class=" flex bg-gray-100 rounded p-3 mb-2" >
-					<img src="assets/img/p2.jpg" class = "rounded-full w-12 mr-4"/>
-					<div class="w-full overflow-hidden">
-						<div class = "d-flex justify-content-between align-items-center">
-							<p class="fw-bold">Diego Juan Velazquez Torres</p>
-							<small>09:55 am</small>
-						</div>	
-						<small class ="ellipsis overflow-hidden white-space-nowrap block"> Ten en cuenta que para que la propiedad 'overflow-ellipsis' funcione correctamente, el contenedor que contiene el texto debe tener una anchura fija o estar limitado por otro elemento. De lo contrario, el texto no se cortará y se mostrará completo, ignorando la propiedad 'overflow-ellipsis'.</small>
-					</div>
-				</div>
-				<div class=" flex bg-gray-100 rounded p-3 mb-2" >
-					<img src="assets/img/p2.jpg" class = "rounded-full w-12 mr-4"/>
-					<div class="w-full overflow-hidden">
-						<div class = "d-flex justify-content-between align-items-center">
-							<p class="fw-bold">Diego Juan Velazquez Torres</p>
-							<small>09:55 am</small>
-						</div>	
-						<small class ="ellipsis overflow-hidden white-space-nowrap block"> Ten en cuenta que para que la propiedad 'overflow-ellipsis' funcione correctamente, el contenedor que contiene el texto debe tener una anchura fija o estar limitado por otro elemento. De lo contrario, el texto no se cortará y se mostrará completo, ignorando la propiedad 'overflow-ellipsis'.</small>
-					</div>
-				</div>
-				<div class=" flex bg-gray-100 rounded p-3 mb-2" >
-					<img src="assets/img/p2.jpg" class = "rounded-full w-12 mr-4"/>
-					<div class="w-full overflow-hidden">
-						<div class = "d-flex justify-content-between align-items-center">
-							<p class="fw-bold">Diego Juan Velazquez Torres</p>
-							<small>09:55 am</small>
-						</div>	
-						<small class ="ellipsis overflow-hidden white-space-nowrap block"> Ten en cuenta que para que la propiedad 'overflow-ellipsis' funcione correctamente, el contenedor que contiene el texto debe tener una anchura fija o estar limitado por otro elemento. De lo contrario, el texto no se cortará y se mostrará completo, ignorando la propiedad 'overflow-ellipsis'.</small>
-					</div>
-				</div>
-				<div class=" flex bg-gray-100 rounded p-3 mb-2" >
-					<img src="assets/img/p2.jpg" class = "rounded-full w-12 mr-4"/>
-					<div class="w-full overflow-hidden">
-						<div class = "d-flex justify-content-between align-items-center">
-							<p class="fw-bold">Diego Juan Velazquez Torres</p>
-							<small>09:55 am</small>
-						</div>	
-						<small class ="ellipsis overflow-hidden white-space-nowrap block"> Ten en cuenta que para que la propiedad 'overflow-ellipsis' funcione correctamente, el contenedor que contiene el texto debe tener una anchura fija o estar limitado por otro elemento. De lo contrario, el texto no se cortará y se mostrará completo, ignorando la propiedad 'overflow-ellipsis'.</small>
-					</div>
-				</div>
-				<div class=" flex bg-gray-100 rounded p-3 mb-2" >
-					<img src="assets/img/p2.jpg" class = "rounded-full w-12 mr-4"/>
-					<div class="w-full overflow-hidden">
-						<div class = "d-flex justify-content-between align-items-center">
-							<p class="fw-bold">Diego Juan Velazquez Torres</p>
-							<small>09:55 am</small>
-						</div>	
-						<small class ="ellipsis overflow-hidden white-space-nowrap block"> Ten en cuenta que para que la propiedad 'overflow-ellipsis' funcione correctamente, el contenedor que contiene el texto debe tener una anchura fija o estar limitado por otro elemento. De lo contrario, el texto no se cortará y se mostrará completo, ignorando la propiedad 'overflow-ellipsis'.</small>
-					</div>
-				</div>
-
-			</div>
+    <div class="d-flex justify-content-between align-items-center">
+		<div class="pagetitle">
+			<h1>Finanzas de Sede</h1>   
+		</div><!-- End Page Title -->
+		<div class="icon" >
+		<a href="administrador-dashboard.html"><i class="bi bi-arrow-return-left"></i></a>
 		</div>
-		<div class = "bg-gray-100 col-md-8 col-sm-10">
-			<div class="px-20 py-6 border-b">
-			<div class ="flex">
-				<div class ="flex flex-grow">
-					<div class = "relative w-12 mr-4">
-						<img src="assets/img/p2.jpg" class="rounded-full"/>
+	  				  
+	</div>
+
+    <section class="section dashboard">
+      <div class="row">
+
+        <!-- Left side columns -->
+        <div class="col-lg-10 container">
+          <div class="row">
+
+			<div class="col-12">
+              <div class="card top-selling overflow-auto container">
+				  <div class="info-card revenue-card">
+					
+
+					
+					  <h5 class="card-title">Gráfico de ingresos mensuales <span>| Sede San Isidro</span></h5>
+
+					  <div class="d-flex align-items-center">
+						<div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
+						  <i class="bi bi-currency-dollar"></i>
+						</div>
+						<div class="ps-3">
+						  <h6>$124,264</h6>
+						  <h4><span class="text-success small pt-1 fw-bold">8%</span> <span class="text-muted small pt-2 ps-1">incrementó</span></h4>
+
+						</div>
+					  </div>
+					<div id="lineChart"></div>
+
+					  <script>
+						document.addEventListener("DOMContentLoaded", () => {
+						  new ApexCharts(document.querySelector("#lineChart"), {
+							series: [{
+							  name: "Ingresos Totales",
+							  data: [124000.31, 141798.32, 241563.25, 151563.24, 189258.36, 162254.25, 219563.23, 191178.89, 148587.26, 169563.23, 191178.89, 148587.26]
+							}],
+							chart: {
+							  height: 350,
+							  type: 'line',
+							  zoom: {
+								enabled: false
+							  }
+							},
+							dataLabels: {
+							  enabled: false
+							},
+							stroke: {
+							  curve: 'straight'
+							},
+							grid: {
+							  row: {
+								colors: ['#f3f3f3', 'transparent'], // takes an array which will be repeated on columns
+								opacity: 0.5
+							  },
+							},
+							xaxis: {
+							  categories: ['Ene', 'Feb', 'Mar', 'Abr', 'May', 'Jun', 'Jul', 'Agost', 'Sep','Oct','Nov','Dic'],
+							}
+						  }).render();
+						});
+					  </script>
+              <!-- End Line Chart -->
+					
+					
+					
 					</div>
-					<div class="self-center">
-						<p class="frot-medium fw-bold">Diego Juan Velazquez Torres</p>
-						<small class ="text-gray-500 front-light">En línea</small>
+
+				 
+			
+
+              </div>
+            </div><!-- End Top Selling -->
+
+            <!-- Top Selling -->
+            <div class="col-12">
+              <div class="card top-selling overflow-auto container">
+
+                
+
+                <div class="card-body pb-0">
+					<div class="d-flex justify-content-between align-items-center">
+					  <h5 class="card-title">INGRESOS <span>| Sede San Isidro</span></h5>
+					  <div>
+					  <a class="btn btn-danger" href="#">
+						<i class="bi bi-file-earmark-pdf"></i>
+					  </a>
+					  <a class="btn btn-success" href="#">
+						<i class="bi bi-file-earmark-excel"></i>
+					  </a>
+					  <a class="btn btn-primary" href="#">
+						<i class="bi bi-file-earmark-text"></i>
+					  </a>
 					</div>
-				</div>
+					 </div>
+					
+
+				 
+				  <br>
+
+                  <div class="d-flex flex-column" >
+					
+					  <table class="table " id="mitabla1">
+						<thead>
+						  <tr>
+							<th>Fecha</th>
+							<th>Paciente</th>
+							<th>Concepto</th>
+							<th>Monto</th>
+							<th>Forma de Pago</th>
+							<th></th>
+						  </tr>
+						</thead>
+						<tbody>
+						  <tr>
+							<td>01/01/2023</td>
+							<td>John Doe</td>
+							<td>Consulta médica</td>
+							<td>$100.00</td>
+							<td>Efectivo</td>
+							<th><a class="btn btn-outline-secondary rounded-pill text-decoration-none" href="administrador-finanzas-recibos.html" target="_blank">Ver recibo</a></th>
+						  </tr>
+						  <tr>
+							<td>02/01/2023</td>
+							<td>Jane Smith</td>
+							<td>Análisis de sangre</td>
+							<td>$50.00</td>
+							<td>Tarjeta de crédito</td>
+							<th><a class="btn btn-outline-secondary rounded-pill text-decoration-none" href="administrador-finanzas-recibos.html" target="_blank">Ver recibo</a></th>
+
+						  </tr>
+						  <tr>
+							<td>03/01/2023</td>
+							<td>Bob Johnson</td>
+							<td>Tratamiento dental</td>
+							<td>$200.00</td>
+							<td>Transferencia bancaria</td>
+							<th><a class="btn btn-outline-secondary rounded-pill text-decoration-none" href="administrador-finanzas-recibos.html" target="_blank">Ver recibo</a></th>
+
+						  </tr>
+						  <tr>
+							<td>04/01/2023</td>
+							<td>Lucy Lee</td>
+							<td>Rayos X</td>
+							<td>$75.00</td>
+							<td>Efectivo</td>
+							<th><a class="btn btn-outline-secondary rounded-pill text-decoration-none" href="administrador-finanzas-recibos.html" target="_blank">Ver recibo</a></th>
+
+						  </tr>
+						  <tr>
+							<td>05/01/2023</td>
+							<td>Adam Jones</td>
+							<td>Consulta médica</td>
+							<td>$120.00</td>
+							<td>Tarjeta de débito</td>
+							<th><a class="btn btn-outline-secondary rounded-pill text-decoration-none" href="administrador-finanzas-recibos.html" target="_blank">Ver recibo</a></th>
+
+						  </tr>
+						  <tr>
+							<td>06/01/2023</td>
+							<td>Samantha Kim</td>
+							<td>Limpieza dental</td>
+							<td>$80.00</td>
+							<td>Transferencia bancaria</td>
+							<th><a class="btn btn-outline-secondary rounded-pill text-decoration-none" href="administrador-finanzas-recibos.html" target="_blank">Ver recibo</a></th>
+
+						  </tr>
+						  <tr>
+							<td>07/01/2023</td>
+							<td>William Davis</td>
+							<td>Extracción de muelas</td>
+							<td>$350.00</td>
+							<td>Efectivo</td>
+							<th><a class="btn btn-outline-secondary rounded-pill text-decoration-none" href="administrador-finanzas-recibos.html" target="_blank">Ver recibo</a></th>
+
+						  </tr>
+						  
+						  <!-- Aquí puedes agregar más filas con los ingresos de la clínica -->
+						</tbody>
+					  </table>
+					<br>
+				  </div>
+					
+                </div>
+
+              </div>
+            </div><!-- End Top Selling -->
+			
+			
+			<div class="col-12">
+				<div class="card top-selling overflow-auto container">
+				<div class="card-body pb-0">
+					<div class="d-flex justify-content-between align-items-center">
+					  <h5 class="card-title">EGRESOS <span>| Sede San Isidro</span></h5>
+					  <div>
+					  <a class="btn btn-danger" href="#">
+						<i class="bi bi-file-earmark-pdf"></i>
+					  </a>
+					  <a class="btn btn-success" href="#">
+						<i class="bi bi-file-earmark-excel"></i>
+					  </a>
+					  <a class="btn btn-primary" href="#">
+						<i class="bi bi-file-earmark-text"></i>
+					  </a>
+					</div>
+					 </div>
 				
+			  <br>
+			  
+			  <div class="d-flex flex-column" >
+				
+				  <table class="table table-striped " id="mitabla2">
+					<thead>
+					  <tr>
+						<th>Fecha</th>
+						<th>Concepto</th>
+						<th>Monto</th>
+						<th>Forma de Pago</th>
+						<th>Proveedor</th>
+						<th>Categoría de Gasto</th>
+						<th>Descripción</th>
+					  </tr>
+					</thead>
+					<tbody>
+					  <tr>
+						<td>01/01/2023</td>
+						<td>Pago de renta de local</td>
+						<td>$1,000.00</td>
+						<td>Transferencia bancaria</td>
+						<td>Propietario del local</td>
+						<td>Gastos Generales</td>
+						<td>Pago de la renta del mes de enero</td>
+					  </tr>
+					  <tr>
+						<td>05/01/2023</td>
+						<td>Compra de suministros médicos</td>
+						<td>$500.00</td>
+						<td>Tarjeta de crédito</td>
+						<td>Proveedor de suministros</td>
+						<td>Gastos de Suministros</td>
+						<td>Compra de suministros médicos para el mes de enero</td>
+					  </tr>
+					  <tr>
+						<td>10/01/2023</td>
+						<td>Pago de servicios de limpieza</td>
+						<td>$150.00</td>
+						<td>Efectivo</td>
+						<td>Compañía de limpieza</td>
+						<td>Gastos de Limpieza</td>
+						<td>Pago de servicios de limpieza para el mes de enero</td>
+					  </tr>
+					  <tr>
+						<td>01/01/2023</td>
+						<td>Pago de renta de local</td>
+						<td>$1,000.00</td>
+						<td>Transferencia bancaria</td>
+						<td>Propietario del local</td>
+						<td>Gastos Generales</td>
+						<td>Pago de la renta del mes de enero</td>
+					  </tr>
+					  <tr>
+						<td>05/01/2023</td>
+						<td>Compra de suministros médicos</td>
+						<td>$500.00</td>
+						<td>Tarjeta de crédito</td>
+						<td>Proveedor de suministros</td>
+						<td>Gastos de Suministros</td>
+						<td>Compra de suministros médicos para el mes de enero</td>
+					  </tr>
+					  <tr>
+						<td>10/01/2023</td>
+						<td>Pago de servicios de limpieza</td>
+						<td>$150.00</td>
+						<td>Efectivo</td>
+						<td>Compañía de limpieza</td>
+						<td>Gastos de Limpieza</td>
+						<td>Pago de servicios de limpieza para el mes de enero</td>
+					  </tr>
+					 
+					</tbody>
+				  </table>
+					<br>
+				  </div>
+				 
+				</div>
+				</div>
 			</div>
 			
-			</div>
-			
-			<div class ="px-20 py-6 scrollable2 ">
-				<div class="flex mb-12">
-					<img src="assets/img/p2.jpg" class="self-end rounded-full w-12 mr-4"/>
-					<div class = "flex flex-col">
-						<div class="bg-white p-6 w-96 rounded-3xl rounded-bl-none shadow-sm mb-2">
-							<p class="mb-1 fw-bold">Diego Velazquez</p>
-							<small class="text-gray-500 font-light">
-								El mundo es un lugar maravilloso pero lamentablemente conocemos muy poco sobre él. Al menos, mucho menos de lo que podríamos.
-							</small>
-						</div>
-						<small class="text-gray-500 font-light">09:55 am</small>
-					</div>
-				</div>
-				<div class="flex mb-12 flex-row-reverse">
-					<img src="assets/img/news-3.jpg" class="self-end rounded-full w-12 ml-4"/>
-					<div class = "flex flex-col">
-						<div class="bg-white p-6 w-96 rounded-3xl rounded-br-none shadow-sm mb-2">
-							<p class="mb-1 fw-bold">Beatriz Manrique</p>
-							<small class="text-gray-500 font-light">
-								El mundo es un lugar maravilloso pero lamentablemente conocemos muy poco sobre él. Al menos, mucho menos de lo que podríamos.
-							</small>
-						</div>
-						<small class="text-gray-500 font-light self-end">09:55 am</small>
-					</div>
-				</div>
-				<div class="flex mb-12">
-					<img src="assets/img/p2.jpg" class="self-end rounded-full w-12 mr-4"/>
-					<div class = "flex flex-col">
-						<div class="bg-white p-6 w-96 rounded-3xl rounded-bl-none shadow-sm mb-2">
-							<p class="mb-1 fw-bold">Diego Velazquez</p>
-							<small class="text-gray-500 font-light">
-								El mundo es un lugar maravilloso pero lamentablemente conocemos muy poco sobre él. Al menos, mucho menos de lo que podríamos.
-							</small>
-						</div>
-						<small class="text-gray-500 font-light">09:55 am</small>
-					</div>
-				</div>
-				<div class="flex mb-12 flex-row-reverse">
-					<img src="assets/img/news-3.jpg" class="self-end rounded-full w-12 ml-4"/>
-					<div class = "flex flex-col">
-						<div class="bg-white p-6 w-96 rounded-3xl rounded-br-none shadow-sm mb-2">
-							<p class="mb-1 fw-bold">Beatriz Manrique</p>
-							<small class="text-gray-500 font-light">
-								El mundo es un lugar maravilloso pero lamentablemente conocemos muy poco sobre él. Al menos, mucho menos de lo que podríamos.
-							</small>
-						</div>
-						<small class="text-gray-500 font-light self-end">09:55 am</small>
-					</div>
-				</div>
-			</div>
-			<div class="px-20 py-6 flex border-t">
-				<input type="text" class="px-4 py-2 bg-gray-100 w-full focus:outline-none font-light" placeholder="Escribe tu mensaje..."/>
-				<a href="#" class="bg-blue-500 text-white rounded px-4 py-2">Enviar</a>
-			</div>
-		</div>
-		</div>
-	</section>
-	
+
+
+          </div>
+        </div><!-- End Left side columns -->
+
+       
+		
+        
+
+      </div>
+    </section>
+
   </main><!-- End #main -->
 
   <!-- ======= Footer ======= -->
-
+  <footer id="footer" class="footer">
+    
+    <div class="credits">
+      <!-- All the links in the footer should remain intact. -->
+      <!-- You can delete the links only if you purchased the pro version. -->
+      <!-- Licensing information: https://bootstrapmade.com/license/ -->
+      <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/nice-admin-bootstrap-admin-html-template/ -->
+      
+    </div>
+  </footer><!-- End Footer -->
 
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
@@ -486,15 +628,29 @@
   <script src="assets/vendor/tinymce/tinymce.min.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
   <!-- Agregamos las librerías de jQuery y Bootstrap 5 -->
-	
-
-
-
-<!-- Agregamos las librerías de jQuery UI para crear el calendario -->
 
 
   <!-- Template Main JS File -->
   <script src="assets/js/jsAdministrador.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+	<script src="https://cdn.datatables.net/v/bs5/dt-1.13.4/datatables.min.js"></script>
+	<script>
+  var table = new DataTable('#mitabla1', {
+    language: {
+      url: 'https://cdn.datatables.net/plug-ins/1.13.4/i18n/es-ES.json',
+    },
+    pageLength: 5
+	
+  });
+</script>
+	<script>
+  var table = new DataTable('#mitabla2', {
+    language: {
+      url: 'https://cdn.datatables.net/plug-ins/1.13.4/i18n/es-ES.json',
+    },
+    pageLength: 5
+  });
+</script>
 
 </body>
 
